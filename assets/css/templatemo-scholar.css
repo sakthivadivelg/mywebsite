@@ -285,7 +285,13 @@ h2.accordion-header button { padding: 15px 25px; font-family: 'Poppins'; font-si
 .accordion-button:not(.collapsed)::after { background-image: none; line-height: 32px; content: '-'; }
 .accordion-body { padding: 0px 25px 30px 25px; font-size: 14px; line-height: 28px; color: #4a4a4a; }
 .about-us .section-heading { margin-left: 60px; margin-bottom: 0px; }
-.about-us .section-heading .main-button { margin-top: 50px; }
+.about-us .section-heading .main-button { margin-top: 20px; }
+.about-us .section-heading h6 { font-size: 32px; padding-bottom: 5px; color: #3e3094; position: relative; padding-left: 58px; display: flex; align-items: center; justify-content: flex-start; height: 72px; }
+.about-us .section-heading .sh_description { padding: 10px 0; line-height: 32px; font-size: 14px; text-align: justify; color: #100f17; }
+.about-us .section-heading .sh_description .sh_bold_2 { color: #230abc; }
+.about-us .section-heading .about_link_more { background-color: #7a6ad8; color: #fff; }
+.about-us .section-heading .about_link_more:hover { background-color: #2006b3; color: #fff; }
+.about-us .section-heading h6:after { background: url(../images/sakthi-logo-photo.png) no-repeat 0 0; content: ''; width: 50px; height: 52px; display: flex; align-items: center; left: 0px; top: 6px; position: absolute; border-radius: 50%; box-shadow: inset 0px 0px 4px 2px #ffffff; border: 2.5px solid #6457b2; }
 /* 
 ---------------------------------------------
 Courses Style
