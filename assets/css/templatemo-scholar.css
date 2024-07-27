@@ -287,7 +287,7 @@ h2.accordion-header button { padding: 15px 25px; font-family: 'Poppins'; font-si
 .about-us .section-heading { margin-left: 60px; margin-bottom: 0px; }
 .about-us .section-heading .main-button { margin-top: 20px; }
 .about-us .section-heading h6 { font-size: 32px; padding-bottom: 5px; color: #3e3094; position: relative; padding-left: 58px; display: flex; align-items: center; justify-content: flex-start; height: 72px; }
-.about-us .section-heading .sh_description { padding: 10px 0; line-height: 32px; font-size: 14px; text-align: justify; color: #100f17; }
+.about-us .section-heading .sh_description { padding: 10px 0 20px; line-height: 34px; font-size: 16px; text-align: justify; color: #100f17; }
 .about-us .section-heading .sh_description .sh_bold_2 { color: #230abc; }
 .about-us .section-heading .about_link_more { background-color: #7a6ad8; color: #fff; }
 .about-us .section-heading .about_link_more:hover { background-color: #2006b3; color: #fff; }
