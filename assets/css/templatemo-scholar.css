@@ -253,10 +253,10 @@ Banner Style
 .main-banner .item .buttons .icon-button a { color: #fff; font-size: 14px; font-weight: 500; }
 .main-banner .owl-nav { position: absolute; max-width: 1320px; bottom: 63px; left: 0; text-align: right; }
 .main-banner .owl-nav .owl-prev i,
-.main-banner .owl-nav .owl-next i { width: 50px; height: 50px; line-height: 50px; font-size: 24px; display: inline-block; color: #fff; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; opacity: 1; transition: all .3s; }
+.main-banner .owl-nav .owl-next i {width: 50px;height: 50px;line-height: 50px;font-size: 24px;display: inline-block;color: #fff;background-color: #ffc107;border-radius: 50%;opacity: 1;transition: all .3s;}
 .main-banner .owl-nav .owl-prev i { position: absolute; bottom: 65px; }
 .main-banner .owl-nav .owl-prev i:hover,
-.main-banner .owl-nav .owl-next i:hover { opacity: 1; background-color: rgba(255, 255, 255, 0.5); }
+.main-banner .owl-nav .owl-next i:hover {opacity: 1;background-color: #876602;}
 .main-banner .item .header-text { width: 730px; height: auto; display: flex; align-items: flex-start; flex-direction: column;     /* background-color: red; */ padding: 12px 12px 12px 55px; justify-content: center; }
 /* 
 ---------------------------------------------
