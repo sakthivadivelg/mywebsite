@@ -117,12 +117,12 @@ html,
 body { font-family: 'Open Sans', 'Poppins', sans-serif }
 ::selection { background: #7a6ad8; color: #fff; }
 ::-moz-selection { background: #7a6ad8; color: #fff; }
-.section { padding-top: 30px; margin-top: 120px; }
+.section { padding-top: 30px; margin-top: 0px; }
 .section-heading { margin-bottom: 60px; }
-.section-heading h2 { font-size: 36px; font-weight: 600; text-transform: capitalize; margin: 20px 0; line-height: 44px; }
+.section-heading h2 { font-size: 36px; font-weight: 900; text-transform: capitalize; margin: 20px 0; line-height: 44px; color: #bb6a39; }
 .section-heading h2 em { color: #7a6ad8; font-style: normal; }
 .section-heading h6 { color: #7a6ad8; font-size: 14px; text-transform: uppercase; font-weight: 600; }
-.main-button a { display: inline-block; background-color: #fff; color: #891313; font-size: 14px; font-weight: 500; height: 40px; line-height: 40px; padding: 0px 25px; border-radius: 20px; transition: all .3s; }
+.main-button a { display: inline-block; background-color: #fff; color: #891313; font-size: 20px; font-weight: 500; height: 50px; line-height: 50px; padding: 0px 40px; border-radius: 12px; transition: all .3s; }
 .main-button a:hover { background-color: #891313; color: #fff; }
 /* 
 ---------------------------------------------
@@ -274,17 +274,17 @@ Services Style
 About Style
 --------------------------------------------- 
 */
-.about-us { position: relative; padding: 0px; margin-top: 130px; }
-.about-us:before { position: absolute; top: 0; bottom: 0; right: 0; z-index: -1; width: 84%; height: 100%; background-color: #bbf9bc; content: ''; border-top-left-radius: 500px; border-bottom-left-radius: 500px; }
-.accordion { margin-top: 0px; margin-bottom: -40px; background-color: #6ad86d; border-radius: 40px; padding: 80px 50px 50px 50px; }
+.about-us { position: relative; padding: 0px; padding-top: 120px; background-color: #ecffec; padding-bottom: 80px; }
+.about-us:before { position: absolute; top: 0; bottom: 0; right: 0; z-index: -1; width: 84%; height: 100%; background-color: #ecffec; content: ''; border-top-left-radius: 500px; border-bottom-left-radius: 500px; }
+.accordion { margin-top: 0px; margin-bottom: -40px; background-color: #6bb86d; border-radius: 40px; padding: 80px 50px 50px 50px; }
 .accordion-item { background-color: #fff; border-radius: 40px !important; margin-bottom: 30px; border: none; }
 .accordion-item .accordion-button { outline: none; box-shadow: none; border-radius: 40px !important; }
-.accordion-button:not(.collapsed) { color: #6ad86d; background-color: #fff; font-size: 18px; }
+.accordion-button:not(.collapsed) { color: #07820a; background-color: #fff; font-size: 24px; }
 h2.accordion-header button { padding: 15px 25px; font-family: 'Poppins'; font-size: 16px; font-weight: 600; }
-.accordion-button::after { font-size: 18px; font-weight: 500; background-image: none; content: '+'; width: 30px; height: 30px; display: inline-block; text-align: center; line-height: 30px; border-radius: 50%; background-color: #6ad86d; color: #fff; }
+.accordion-button::after { font-size: 18px; font-weight: 500; background-image: none; content: '+'; width: 30px; height: 30px; display: inline-block; text-align: center; line-height: 30px; border-radius: 50%; background-color: #07820a; color: #fff; }
 .accordion-button:not(.collapsed)::after { background-image: none; line-height: 32px; content: '-'; }
-.accordion-body { padding: 0px 25px 30px 25px; font-size: 14px; line-height: 28px; color: #4a4a4a; }
-.accordion-body ol li { padding: 10px 0 0; }
+.accordion-body { padding: 0px 25px 30px 25px; font-size: 16px; line-height: 32px; color: #4a4a4a; }
+.accordion-body ol li { padding: 10px 0 8px; }
 .about-us .section-heading { margin-left: 60px; margin-bottom: 0px; padding: 20px 0 60px; }
 .about-us .section-heading .main-button { margin-top: 20px; }
 .about-us .section-heading h6 { font-size: 32px; padding-bottom: 5px; color: #2f3a30; position: relative; padding-left: 0px; display: flex; align-items: center; justify-content: center; height: 72px; font-weight: 800; }
@@ -298,18 +298,14 @@ h2.accordion-header button { padding: 15px 25px; font-family: 'Poppins'; font-si
 Courses Style
 --------------------------------------------- 
 */
-.courses {margin-top: 160px;background-color: #ffe6f6;}
+.courses { margin-top: 0px; background-color: #ffe6f6; }
 .event_filter { text-align: center; }
-.event_filter {background-color: #830055;border-radius: 50px;padding: 40px;list-style: none;margin: 0 auto 70px;max-width: max-content;}
+.event_filter { background-color: #830055; border-radius: 50px; padding: 40px; list-style: none; margin: 0 auto 70px; max-width: max-content; }
 .event_filter li { display: inline-block; margin: 0px 20px; }
-.event_filter li a {font-size: 18px;font-weight: 600;color: #FFF;transition: all .3s;}
-.event_filter li a.is_active{
-    background-color: #90577c;
-    padding: 10px 20px;
-    border-radius: 16px;
-}
+.event_filter li a { font-size: 18px; font-weight: 600; color: #FFF; transition: all .3s; }
+.event_filter li a.is_active { background-color: #90577c; padding: 10px 20px; border-radius: 16px; }
 .event_filter li .event_filter li a.is_active,
-.event_filter li a:hover {color: #efbcdd;}
+.event_filter li a:hover { color: #efbcdd; }
 .events_item .thumb { position: relative; border-radius: 25px; overflow: hidden; border: 2.5px solid #830055; border-bottom-left-radius: 0px; border-bottom-right-radius: 0; }
 .events_item .thumb img { margin-bottom: -5px; }
 .events_item .thumb span.category { position: absolute; left: 30px; top: 30px; font-size: 14px; text-transform: uppercase; color: #FFF; background-color: rgba(250, 250, 250, 0.95); padding: 8px 20px; border-radius: 25px; font-weight: 500; display: inline-block; display: none; }
@@ -382,17 +378,17 @@ Events Style
 --------------------------------------------- 
 */
 .events .section-heading { margin-bottom: 100px; }
-.events .item { background-color: #f1f0fe; border-radius: 25px; position: relative; padding: 40px; margin-bottom: 96px; }
+.events .item { background-color: #FFF; border-radius: 25px; position: relative; padding: 40px; margin-bottom: 96px; border: 1px solid #de5909; }
 .events .item .image { position: relative; }
-.events .item .image img { position: absolute; border-radius: 25px; max-width: 260px; left: 0; top: -70px; }
+.events .item .image img { position: absolute; border-radius: 50%; max-width: 150px; left: 0; top: -33px;     /* border: 1px solid #7a6ad8; */ height: 150px; }
 .events .item ul li { display: inline-block; width: 14.5%; vertical-align: middle; }
 .events .item ul li:first-child { width: 46%; }
 .events .item ul li:nth-of-type(2) { width: 16%; }
-.events .item ul li span.category { font-size: 14px; text-transform: uppercase; color: #7a6ad8; background-color: #fff; padding: 8px 20px; border-radius: 25px; font-weight: 500; display: inline-block; margin-bottom: 20px; }
-.events .item ul li h4 { font-size: 22px; font-weight: 600; }
+.events .item ul li span.category { font-size: 24px; text-transform: uppercase; color: #de5909; background-color: #fff; padding: 8px 20px 0px 0px; border-radius: 0; font-weight: 800; display: inline-block; margin-bottom: 20px; }
+.events .item ul li h4 { font-size: 22px; font-weight: 700; color: #100600; }
 .events .item ul li span { display: inline-block; font-size: 14px; color: #4a4a4a; margin-bottom: 10px; }
-.events .item ul li h6 { font-size: 16px; color: #7a6ad8; font-weight: 600; }
-.events .item a { position: absolute; right: 0; top: 22px; background-color: #7a6ad8; width: 60px; height: 120px; display: inline-block; text-align: center; line-height: 120px; font-size: 18px; z-index: 1; color: #fff; border-radius: 60px 0px 0px 60px; }
+.events .item ul li h6 { font-size: 16px; color: #ff843b; font-weight: 700; }
+.events .item a { position: absolute; right: 0; top: 22px; background-color: #de5909; width: 60px; height: 120px; display: inline-block; text-align: center; line-height: 120px; font-size: 18px; z-index: 1; color: #fff; border-radius: 60px 0px 0px 60px; }
 /* 
 ---------------------------------------------
 Contact Style
@@ -532,9 +528,11 @@ div#about-us .row { flex-direction: column-reverse; display: flex; }
 }
 .porfile_pic { display: flex; height: min(100vw - 38px, 288px); justify-content: center; margin: auto; min-height: 96px; min-width: 96px; overflow: visible; position: relative; width: min(100vw - 38px, 288px); margin-top: 20px; margin-bottom: 20px; }
 .porfile_pic img { border-radius: 50%; height: 100%; max-width: 288px; }
-#Experiences .section-heading h6 { color: #7a6ad8; font-size: 35px; text-transform: uppercase; font-weight: 600; }
+#Experiences .section-heading h6 { color: #e85e04; font-size: 35px; text-transform: uppercase; font-weight: 800; }
 .contact-us h6 { color: #e1a900; font-size: 50px; text-transform: uppercase; font-weight: 800; }
 .contact-us .section-heading h2 { font-weight: 900; font-size: 48px; line-height: 68px; margin-top: 55px; }
 .contact-us .section-heading p { margin-top: 50px; font-size: 24px; line-height: 40px; font-weight: 600; }
-.courses .section-heading h2{}
-.courses .section-heading h6{}
+.courses .section-heading h2 { }
+.courses .section-heading h6 { }
+#Experiences { background-color: #fff0e7; }
+#services { background-color: #ffe0e0; }
