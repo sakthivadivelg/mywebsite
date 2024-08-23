@@ -266,7 +266,7 @@ Services Style
 .services .service-item { position: relative; margin-top: 95px; }
 .services .service-item .icon { width: 190px; height: 190px; display: inline-block; text-align: center; line-height: 190px; background-color: #d86a6a; border-radius: 50%; position: absolute; right: 0; top: -95px; }
 .services .service-item .icon img { max-width: 86px; transition: all .2s; }
-.services .service-item .main-content { border-radius: 25px; padding: 80px 30px 50px 30px; background-color: #febcbc; margin-bottom: 30px; margin-right: 80px; transition: all .4s; min-height: 520px; }
+.services .service-item .main-content { border-radius: 25px; padding: 80px 30px 50px 30px; background-color: #febcbc; margin-bottom: 30px; margin-right: 80px; transition: all .4s; min-height: auto; }
 .services .service-item h4 { font-size: 22px; font-weight: 600; margin-bottom: 15px; line-height: 30px; transition: all .4s; }
 .services .service-item p { color: #4a4a4a; margin-bottom: 25px; font-size: 16px; color: #000000; max-height: 170px;     /* text-overflow: ellipsis; */     /* overflow: hidden; */
 /* white-space: nowrap; */
