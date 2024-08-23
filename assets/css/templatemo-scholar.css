@@ -268,7 +268,7 @@ Services Style
 .services .service-item .icon img { max-width: 86px; transition: all .2s; }
 .services .service-item .main-content { border-radius: 25px; padding: 80px 30px 50px 30px; background-color: #febcbc; margin-bottom: 30px; margin-right: 80px; transition: all .4s; min-height: 520px; }
 .services .service-item h4 { font-size: 22px; font-weight: 600; margin-bottom: 15px; line-height: 30px; transition: all .4s; }
-.services .service-item p { color: #4a4a4a; margin-bottom: 25px; font-size: 16px; color: #000000; }
+.services .service-item p {color: #4a4a4a;margin-bottom: 25px;font-size: 16px;color: #000000;max-height: 170px;/* text-overflow: ellipsis; *//* overflow: hidden; *//* white-space: nowrap; */min-height: 170px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 6; /* number of lines to show */line-clamp: 6;-webkit-box-orient: vertical;}
 /* 
 ---------------------------------------------
 About Style
@@ -518,7 +518,12 @@ div#about-us .row { flex-direction: column-reverse; display: flex; }
 .events .container .row .col-lg-3 { display: none; }
 .events .container .row .col-lg-9 ul + a { display: none; }
 .events .section-heading { margin-bottom: 60px; }
-.events .item ul li span.category { color: #FFF; margin-top: 30px; background-color: #7a6ad8; }
+.events .item ul li span.category {
+    color: #de5909;
+    margin-top: 30px;
+    background-color: #FFF;
+}
+.events .item .image,.events .item a{display: none;}
 .header-area .main-nav .logo h1::after { width: 45px; height: 57px; border-radius: 20%; top: -3px; }
 /* .main-banner .container{max-width: 100%;} */ }
 @media (max-width:1200px) {
@@ -536,3 +541,6 @@ div#about-us .row { flex-direction: column-reverse; display: flex; }
 .courses .section-heading h6 { }
 #Experiences { background-color: #fff0e7; }
 #services { background-color: #ffe0e0; }
+.accordion-body>ol {
+    padding-left: 0px;
+}
