@@ -121,7 +121,6 @@ body { font-family: 'Open Sans', 'Poppins', sans-serif }
 .section-heading { margin-bottom: 60px; }
 .section-heading h2 { font-size: 36px; font-weight: 900; text-transform: capitalize; margin: 20px 0; line-height: 44px; color: #bb6a39; }
 .section-heading h2 em { color: #7a6ad8; font-style: normal; }
-.section-heading h6 { color: #7a6ad8; font-size: 14px; text-transform: uppercase; font-weight: 600; }
 .main-button a { display: inline-block; background-color: #fff; color: #891313; font-size: 20px; font-weight: 500; height: 50px; line-height: 50px; padding: 0px 40px; border-radius: 12px; transition: all .3s; }
 .main-button a:hover { background-color: #891313; color: #fff; }
 /* 
@@ -536,8 +535,8 @@ div#about-us .row { flex-direction: column-reverse; display: flex; }
 .contact-us h6 { color: #e1a900; font-size: 50px; text-transform: uppercase; font-weight: 800; }
 .contact-us .section-heading h2 { font-weight: 900; font-size: 48px; line-height: 68px; margin-top: 55px; }
 .contact-us .section-heading p { margin-top: 50px; font-size: 24px; line-height: 40px; font-weight: 600; }
-.courses .section-heading h2 { }
-.courses .section-heading h6 { }
+.courses .section-heading h2 { display: none;}
+.courses .section-heading h6 {font-weight: 800; color: #cc3296; text-transform: uppercase; font-size: 40px; padding-top: 30px; }
 #Experiences { background-color: #fff0e7; }
-#services { background-color: #ffe0e0; }
+#services { background-color: #ffe0e0; padding: 120px 0 120px;}
 .accordion-body > ol { padding-left: 0px; }
