@@ -567,3 +567,6 @@ div#about-us .row { flex-direction: column-reverse; display: flex; }
 .services .section-heading {
     margin-bottom: 0px;
 }
+.events .item a.right_ui {
+    display: none;
+}

@@ -215,4 +215,24 @@
         });
     }
 
+	//class="ccy_y">12</span> yrs <span class="ccy_m">4</span> mos</h6>
+
+	function formatDate() {
+		var today = new Date();
+		var dd = String(today.getDate()).padStart(2, '0');
+		var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+		var yyyy = today.getFullYear();
+		
+		today = mm + '/' + dd + '/' + yyyy;
+		//document.write(today);
+		console.log(today);
+		
+		$('.ccy_y').text(yyyy- 2012);
+		//mm = 12;
+		if(mm>=2){  $('.ccy_m').text(mm - 2); } else{  $('.ccy_m').text(12 - mm); }
+
+	}
+	formatDate();
+	
+
 })(window.jQuery);
