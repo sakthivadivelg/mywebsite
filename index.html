@@ -2,1167 +2,769 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <meta name="description" content="Sakthivadivel Ganesan — Technical Lead & Architect, UX/UI Designer with 14+ years designing scalable SaaS & cloud platforms used by 4M+ users. Google-certified, AI-integrated design leader.">
+  <meta name="theme-color" content="#07070c">
 
-  <title>sakthivadivel - portfolio</title>
+  <meta property="og:title" content="Sakthivadivel Ganesan — Technical Lead & UX/UI Designer">
+  <meta property="og:description" content="UX Lead with 14+ years designing scalable SaaS & cloud platforms used by 4M+ users. Google-certified, AI-integrated design leader.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/sakthi-portrait.png">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Sakthivadivel Ganesan — Technical Lead &amp; UX/UI Designer</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!--
-
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
--->
-
-  <style>
-    .section.fun-facts {
-      display: none;
-    }
-
-    div#team {
-      display: none;
-    }
-
-    .section.testimonials {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="assets/images/sakthi-logo.png">
 </head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  <!-- Backgrounds -->
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <span class="bg-orb o1"></span>
+  <span class="bg-orb o2"></span>
+  <span class="bg-orb o3"></span>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__name">sakthivadivel<span style="color:var(--cyan)">.</span></div>
+      <div class="preloader__bar"><span></span></div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <!-- Header -->
+  <header class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <h1>sakthivadivel</h1>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Serach Start ***** -->
-            <div class="search-input">
-              <form id="search" action="#">
-                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
-                  onkeypress="handle" />
-                <i class="fa fa-search"></i>
-              </form>
-            </div>
-            <!-- ***** Serach Start ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about-us">About</a></li>
-              <li class="scroll-to-section"><a href="#Experiences">Experiences</a></li>
-              <li class="scroll-to-section"><a href="#services">UX/UI</a></li>
-              <li class="scroll-to-section"><a href="#Projects">Projects</a></li>
-              
-              <!-- <li class="scroll-to-section"><a href="#team">Team</a></li> -->
-              <li class="scroll-to-section"><a target="_blank" class="resume_link"
-                  href="https://sakthivadivelg.github.io/mywebsite/Technical-Lead-UI-UX-designer.pdf">Resume</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact Me</a></li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+      <nav class="nav">
+        <a href="#top" class="logo">sakthivadivel<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#certs">Certs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary" data-magnetic>Let's talk <i class="fa fa-arrow-right"></i></a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="top">
+  <!-- Hero -->
+  <section class="hero" id="top">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2 class="category__title">Google UI/UX Experience</h2>
-                <p class="category__date">Completed on July 11, 2022</p>
-                <p class="category__grade">Grade Achieved: <strong>93%</strong></p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/27DGATMQ6BUM"
-                      target="_blank">Certification Link</a>
-                  </div>
-                  <!-- <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
-                  </div> -->
-                </div>
-              </div>
-              <div class="header-text-certificate">
-                <img src="https://sakthivadivelg.github.io/mywebsite/assets/images/google-certificate-1.jpg" title="">
-              </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="hero-badge" data-reveal>
+            <span class="pulse"></span> Available for design leadership &amp; consulting
+          </span>
+          <h1 data-reveal data-reveal-delay="1">
+            Designing <span class="gradient-text">human-centred</span> products for millions.
+          </h1>
+          <div class="typed-wrap" data-reveal data-reveal-delay="2">
+            I'm Sakthivadivel — a
+            <span class="typed" data-words='["Technical Lead & Architect.","Senior UX/UI Designer.","Product Design Leader.","Design Systems builder.","AI-integrated designer."]'></span><span class="typed-cursor"></span>
+          </div>
+          <p class="lead" data-reveal data-reveal-delay="3">
+            A UX Lead with <strong>14+ years</strong> designing scalable SaaS and cloud platforms used by
+            <strong>4M+ users</strong>. I pair UX strategy and design systems with deep front-end and AI-assisted
+            workflows — and lead cross-functional teams to ship high-impact digital products.
+          </p>
+          <div class="hero-actions" data-reveal data-reveal-delay="4">
+            <a href="#work" class="btn btn-primary" data-magnetic>View my work <i class="fa fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-ghost" data-magnetic><i class="fa fa-paper-plane"></i> Get in touch</a>
+          </div>
+          <div class="hero-socials" data-reveal data-reveal-delay="5">
+            <a href="https://www.linkedin.com/in/sakthivadivel-ganesan-designer" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sakthi.vdl@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            <a href="tel:+919945553867" aria-label="Phone"><i class="fa fa-phone"></i></a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/4FBF855XLU7M" target="_blank" rel="noopener" aria-label="Coursera certificate"><i class="fa fa-graduation-cap"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-reveal-delay="2">
+          <div class="hero-card">
+            <div class="hero-avatar">
+              <img src="assets/images/sakthi-profile.png" alt="Sakthivadivel Ganesan">
             </div>
-            <div class="item item-2">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Google UI/UX </br>Design Process</h2>
-                <p>Completed on November 7, 2022</p>
-                <p>Grade Achieved: <strong>91.87%</strong></p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/4FBF855XLU7M"
-                      target="_blank">Certification Link</a>
-                  </div>
-                  <!-- <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
-                  </div> -->
-                </div>
-              </div>
-              <!-- header-text-certificate -->
-              <div class="header-text-certificate">
-                <img src="https://sakthivadivelg.github.io/mywebsite/assets/images/google-certificate-2.jpg" title="">
-              </div>
+            <h3>Sakthivadivel Ganesan</h3>
+            <div class="role">Technical Lead &amp; Architect · UX/UI Designer</div>
+            <div class="meta">
+              <span class="chip">Figma</span>
+              <span class="chip">Design Systems</span>
+              <span class="chip">React</span>
+              <span class="chip">AI Design</span>
             </div>
-            <div class="item item-3">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Google Project Management</h2>
-                <p>Completed on May 31, 2022</p>
-                <p>Grade Achieved: <strong>95%</strong></p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/K56SG442GV8T"
-                      target="_blank">Certification Link</a>
-                  </div>
-                  <!-- <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
-                  </div> -->
-                </div>
-              </div>
-              <!-- header-text-certificate -->
-              <div class="header-text-certificate">
-                <img src="https://sakthivadivelg.github.io/mywebsite/assets/images/google-certificate-3.jpg" title="">
-              </div>
-            </div>
+          </div>
+          <div class="hero-float f1">
+            <span class="ic"><i class="fa fa-users"></i></span>
+            4M+ users served
+          </div>
+          <div class="hero-float f2">
+            <span class="ic"><i class="fa fa-award"></i></span>
+            Google UX Certified
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="mouse"></span>
+      Scroll
+    </a>
+  </section>
 
-  <!-- start   | section about-us -->
-  <div class="section about-us" id="about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 ">
-          <div class="accordion" id="accordionExample">
-            <!-- accordion-item -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Project-Based Achievements:
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ol>
-                    <li><strong>Successful Product Launches:</strong> Led the redesign or creation of a product that
-                      significantly improved user engagement or satisfaction.</li>
-                    <li><strong>Award-Winning Designs:</strong> Received design awards or recognitions from industry
-                      bodies or competitions.</li>
-                    <li><strong>High-Impact Projects:</strong> Delivered a project that solved a critical user problem
-                      or streamlined a complex process, leading to measurable improvements.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- accordion-item -->
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collaboration and
-                  Leadership:
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ol>
-                    <li><strong>Mentorship and Training:</strong> Mentored junior designers or conducted training
-                      sessions that enhanced the team’s skills.</li>
-                    <li><strong>Cross-Functional Team Success:</strong> Successfully collaborated with developers,
-                      product managers, and other stakeholders to deliver a cohesive product.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- accordion-item -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Client and
-                  Stakeholder Relations:
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ol>
-                    <li><strong>Client Satisfaction:</strong> Received high praise or positive feedback from clients or
-                      stakeholders for delivering exceptional design solutions.</li>
-                    <li><strong>Successful Stakeholder Engagement:</strong> Effectively managed stakeholder expectations
-                      and incorporated their feedback to achieve a successful outcome.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- accordion-item -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Innovative
-                  Solutions:
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ol>
-                    <li><strong>Introduced New Design Patterns:</strong> Developed or popularized a new design pattern
-                      or feature that set a new standard in the industry.</li>
-                    <li><strong>Pioneered Accessibility Improvements:</strong> Implemented groundbreaking accessibility
-                      features that set a benchmark for inclusive design.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- accordion-item -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Quantifiable
-                  Metrics:
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ol>
-                    <li><strong>Increased Conversion Rates:</strong> Improved conversion rates by a significant
-                      percentage through optimized UI/UX design.</li>
-                    <li><strong>Reduced Bounce Rates:</strong> Achieved a notable reduction in bounce rates by enhancing
-                      user experience.</li>
-                    <li><strong>Enhanced User Retention:</strong> Contributed to higher user retention rates through
-                      thoughtful design improvements.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-          <div class="section-heading">
-            <h6>About Me</h6>
-            <div class="porfile_pic">
-              <img src="https://sakthivadivelg.github.io/mywebsite/assets/images/sakthi_about.png" />
-            </div>
-            <!-- <h2>What make us the best academy online?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p> -->
-
-
-            <p class="sh_description"> As a <strong class="sh_bold_2">Lead/Specialist</strong>, I possess extensive
-              knowledge of <strong class="sh_bold_2">web architecture, programming languages, and web design
-                technology</strong>, along with proficiency in cloud storage platforms. </p>
-            <p class="sh_description">I have developed applications using various technologies across different
-              industries. My skills include enhancing UI responsiveness, resolving performance bottlenecks, and
-              effectively communicating technology stacks' benefits and drawbacks. I specialize in architecting,
-              designing, and developing high-quality web applications for businesses.</p>
-
-            <div class="main-button">
-              <a class="about_link_more" href="https://www.linkedin.com/in/sakthivadivel-ganesan-designer/">Discover
-                More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- start   | section about-us -->
-
-  <div class="section events" id="Experiences">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Year of Experiences</h6>
-            <!-- <h2>Year of Experiences</h2> -->
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <ul>
-                  <li>
-                    <span class="category">IDrive Software India Pvt Ltd</span>
-                    <h4>Technical Lead UX/UI Designer </h4>
-                  </li>
-                  <li>
-                    <span>From Date:</span>
-                    <h6>Apr 2012</h6>
-                  </li>
-                  <li>
-                    <span>End Date:</span>
-                    <h6>Present</h6>
-                  </li>
-                  <li>
-                    <span>Years:</span>
-                    <h6 class="current_com_years"><span class="ccy_y">12</span> yrs <span class="ccy_m">4</span> mos</h6>
-                  </li>
-                </ul>
-                <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="image">
-                  <img src="assets/images/jbkinfo-tech.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <ul>
-                  <li>
-                    <span class="category">JBK Infotech Ltd</span>
-                    <h4>Senior Web Designer</h4>
-                  </li>
-                  <li>
-                    <span>From Date:</span>
-                    <h6>Sep 2011</h6>
-                  </li>
-                  <li>
-                    <span>End Date:</span>
-                    <h6>Mar 2012</h6>
-                  </li>
-                  <li>
-                    <span>Years:</span>
-                    <h6>7 mos</h6>
-                  </li>
-                </ul>
-                <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="image">
-                  <img src="assets/images/qwikinet.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <ul>
-                  <li>
-                    <span class="category">Qwikinet Pvt Ltd</span>
-                    <h4>Web Designer </h4>
-                  </li>
-                  <li>
-                    <span>From Date:</span>
-                    <h6>Feb 2011</h6>
-                  </li>
-                  <li>
-                    <span>End Date:</span>
-                    <h6>Aug 2011</h6>
-                  </li>
-                  <li>
-                    <span>Years:</span>
-                    <h6>7 mos</h6>
-                  </li>
-                </ul>
-                <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="image">
-                  <img src="assets/images/amaze_media.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <ul>
-                  <li>
-                    <span class="category">Amaze Multimedia</span>
-                    <h4>Web Designer </h4>
-                  </li>
-                  <li>
-                    <span>From Date:</span>
-                    <h6>Sep 2009</h6>
-                  </li>
-                  <li>
-                    <span>End Date:</span>
-                    <h6>Jan 2011</h6>
-                  </li>
-                  <li>
-                    <span>Years:</span>
-                    <h6>1 yr 5 mos</h6>
-                  </li>
-                </ul>
-                <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- START | Design 2 technolgy company -->
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="image">
-                  <img src="assets/images/design2-technology.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <ul>
-                  <li>
-                    <span class="category">Design2 Technologies India Pvt</span>
-                    <h4>Web Designer </h4>
-                  </li>
-                  <li>
-                    <span>From Date:</span>
-                    <h6>Feb 2007</h6>
-                  </li>
-                  <li>
-                    <span>End Date:</span>
-                    <h6>Aug 2009</h6>
-                  </li>
-                  <li>
-                    <span>Years:</span>
-                    <h6>2 yr 7 mos</h6>
-                  </li>
-                </ul>
-                <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END   | Design 2 technolgy company -->
-      </div>
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__item">UX Strategy <span class="star">✦</span></span>
+      <span class="marquee__item">Design Systems <span class="star">✦</span></span>
+      <span class="marquee__item">AI-Integrated Prototyping <span class="star">✦</span></span>
+      <span class="marquee__item">Figma · Adobe XD <span class="star">✦</span></span>
+      <span class="marquee__item">React &amp; Electron <span class="star">✦</span></span>
+      <span class="marquee__item">WCAG Accessibility <span class="star">✦</span></span>
+      <span class="marquee__item">Design-to-Code <span class="star">✦</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee__item">UX Strategy <span class="star">✦</span></span>
+      <span class="marquee__item">Design Systems <span class="star">✦</span></span>
+      <span class="marquee__item">AI-Integrated Prototyping <span class="star">✦</span></span>
+      <span class="marquee__item">Figma · Adobe XD <span class="star">✦</span></span>
+      <span class="marquee__item">React &amp; Electron <span class="star">✦</span></span>
+      <span class="marquee__item">WCAG Accessibility <span class="star">✦</span></span>
+      <span class="marquee__item">Design-to-Code <span class="star">✦</span></span>
     </div>
   </div>
 
-  <div class="services section" id="services">
+  <!-- About -->
+  <section class="section" id="about">
     <div class="container">
-      <div class="row ">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Mastering UX/UI
-            </h6>
-            <!-- <h2>Year of Experiences</h2> -->
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6 box-1">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
-            </div>
-            <div class="main-content">
-              <h4> UX/UI Expert</h4>
-              <p>I am proud to have completed additional certificate courses in Mastering UX/UI, solidifying my
-                expertise in designing intuitive and effective user interfaces. This accomplishment is part of my
-                ongoing dedication to professional development in the rapidly evolving field of UX/UI design.<br><br>
-
-                In my work, I prioritize continuous learning to stay ahead of the latest trends in user experience
-                design. I actively seek out new techniques, tools, and methodologies that can be integrated into our
-                applications, ensuring that we deliver cutting-edge, user-friendly solutions that resonate with our
-                users.<br><br>
-
-                By prioritizing user experience, I focus on creating designs that are not only aesthetically pleasing
-                but also functional and accessible. My approach to UX/UI is holistic, considering every aspect of the
-                user's journey to optimize their interaction with our products.<br><br>
-
-                Through continuous growth and an unwavering commitment to excellence, I aim to deliver superior user
-                experiences that exceed expectations. Whether it's through refining user flows, enhancing visual design,
-                or ensuring responsive performance across devices, my goal is to make the user experience the top
-                priority in all our projects.</p>
-              <!-- <div class="main-button">
-                <a href="#">Read More</a>
-              </div> -->
+      <div class="about-grid">
+        <div class="about-media" data-reveal>
+          <div class="about-photo">
+            <img src="assets/images/sakthi-office.png" alt="Sakthivadivel Ganesan at work">
+            <div class="about-photo__badge">
+              <strong>4M+</strong>
+              <span>users served by products I design</span>
             </div>
           </div>
         </div>
-        <div class="col-lg-12 col-md-6 box-2">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Key Focus Areas</h4>
-              
-              <ol>
-                <li>
-                  <p><strong> UX/UI</strong>:</p>
-                  <ul>
-                    <li><strong>Advanced Knowledge and Skills</strong>: Through specialized courses, I have gained deep
-                      insights into
-                      both foundational and advanced UX/UI principles, enabling me to design interfaces that are not
-                      just
-                      user-friendly but also highly functional and visually compelling.</li>
-                    <li><strong>Practical Application</strong>: I leverage this knowledge in real-world scenarios,
-                      applying best
-                      practices in design systems, usability testing, and interaction design to create interfaces that
-                      delight users
-                      and meet business objectives.</li>
-                  </ul>
-                </li>
-                <li>
-                  <p><strong>Continuous Learning</strong>:</p>
-                  <ul>
-                    <li><strong>Staying Ahead of Trends</strong>: The digital landscape is constantly evolving, and so
-                      is my approach
-                      to learning. I regularly engage with industry publications, webinars, and communities to keep
-                      abreast of
-                      emerging trends, such as micro-interactions, voice user interfaces, and AI-driven design.</li>
-                    <li><strong>Adapting New Technologies</strong>: I experiment with and integrate new tools and
-                      technologies, such
-                      as prototyping software, design systems, and collaboration platforms, to enhance the efficiency
-                      and
-                      effectiveness of the design process.</li>
-                  </ul>
-                </li>
-                <li>
-                  <p><strong>User-Centric Design</strong>:</p>
-                  <ul>
-                    <li><strong>Holistic User Journeys</strong>: I focus on the entire user experience, from initial
-                      engagement to
-                      post-interaction, ensuring that every touchpoint is optimized for usability and delight. This
-                      involves creating
-                      personas, mapping out user journeys, and conducting usability tests to identify pain points and
-                      opportunities
-                      for improvement.</li>
-                    <li><strong>Accessibility and Inclusivity</strong>: I am committed to designing for all users,
-                      including those
-                      with disabilities. This means adhering to WCAG standards, ensuring color contrast, keyboard
-                      navigation, and
-                      screen reader compatibility are all considered in every design.</li>
-                  </ul>
-                </li>
-                <li>
-                  <p><strong>Application Integration</strong>:</p>
-                  <ul>
-                    <li><strong>Seamless Implementation</strong>: I work closely with development teams to ensure that
-                      UX/UI designs
-                      are implemented as intended, maintaining the integrity of the design vision throughout the
-                      development process.
-                      This includes creating detailed design documentation, style guides, and component libraries.</li>
-                    <li><strong>User Feedback and Iteration</strong>: Post-launch, I actively gather user feedback
-                      through surveys,
-                      analytics, and direct interaction, using this data to inform iterative improvements that enhance
-                      user
-                      satisfaction and application performance.</li>
-                  </ul>
-                </li>
-                <li>
-                  <p><strong>Superior User Experiences</strong>:</p>
-                  <ul>
-                    <li><strong>Refined User Flows</strong>: I pay close attention to optimizing user flows, reducing
-                      friction, and
-                      ensuring that users can achieve their goals with minimal effort. This includes simplifying
-                      navigation, reducing
-                      the number of clicks required, and streamlining forms and processes.</li>
-                    <li><strong>Visual and Interaction Design</strong>: I focus on creating visually appealing designs
-                      that align with
-                      brand identity while also prioritizing usability. This includes the strategic use of color,
-                      typography, and
-                      imagery to create a cohesive and engaging visual experience.</li>
-                    <li><strong>Performance Optimization</strong>: Recognizing the importance of speed and
-                      responsiveness, I
-                      collaborate with developers to optimize the performance of our applications across different
-                      devices and
-                      platforms, ensuring fast load times, smooth interactions, and minimal downtime.</li>
-                  </ul>
-                </li>
-              </ol>
-              <!-- <div class="main-button">
-                <a href="#">Read More</a>
-              </div> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6 box-3">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Web Experts</h4>
-              <ol>
-  <li>
-    <!-- <p><strong>Mastering UX/UI</strong>:</p> -->
-    <ul>
-      <li><strong>Deep Expertise</strong>: Over the years, I have built a strong foundation in UX/UI design,
-        complemented by my recent certifications. This combination of experience and formal training allows me to
-        approach design challenges with both creativity and technical precision.</li>
-      <li><strong>Real-World Application</strong>: My work at Web Experts involves applying these principles to
-        real-world projects, where I design interfaces that are user-friendly, accessible, and aligned with business
-        goals.</li>
-    </ul>
-  </li>
-  <li>
-    <!-- <p><strong>Continuous Learning</strong>:</p> -->
-    <ul>
-      <li><strong>Adapting to Industry Evolution</strong>: The web development landscape has changed significantly over
-        the past 15 years. I’ve witnessed the shift from basic HTML sites to complex web applications, and I’ve
-        continuously updated my knowledge to keep pace with these advancements.</li>
-      <li><strong>Embracing New Technologies</strong>: I actively seek out and learn new tools, such as Figma, Sketch,
-        and InVision, and stay informed about emerging trends like AR/VR interfaces, voice user interfaces, and
-        AI-driven design.</li>
-    </ul>
-  </li>
-  <li>
-    <!-- <p><strong>User-Centric Design</strong>:</p> -->
-    <ul>
-      <li><strong>Comprehensive User Research</strong>: My experience has taught me that understanding the user is key
-        to successful design. I employ a variety of research methods, including surveys, interviews, and analytics, to
-        gather insights that inform every aspect of the design process.</li>
-      <li><strong>Accessibility and Inclusivity</strong>: I have a strong commitment to designing for all users. This
-        means not only adhering to accessibility standards but also understanding the diverse needs of our user base and
-        ensuring that our designs are inclusive.</li>
-    </ul>
-  </li>
-  <li>
-    <!-- <p><strong>Application Integration</strong>:</p> -->
-    <ul>
-      <li><strong>Collaboration and Implementation</strong>: My role at Web Experts involves close collaboration with
-        developers, product managers, and other stakeholders to ensure that UX/UI designs are effectively implemented. I
-        provide detailed design documentation and work closely with teams to translate design concepts into functional
-        products.</li>
-      <li><strong>Iterative Improvement</strong>: Post-launch, I leverage user feedback and performance analytics to
-        drive iterative improvements, ensuring that our applications continue to meet user needs and deliver a top-notch
-        experience.</li>
-    </ul>
-  </li>
 
-</ol>
-              <!-- <div class="main-button">
-                <a href="#">Read More</a>
-              </div> -->
-            </div>
+        <div class="about-copy">
+          <span class="eyebrow" data-reveal>About me</span>
+          <h2 data-reveal data-reveal-delay="1" style="font-size:clamp(1.9rem,4.5vw,2.8rem);margin:18px 0 22px;">
+            A designer who bridges <span class="gradient-text">aesthetics</span> and engineering.
+          </h2>
+          <p data-reveal data-reveal-delay="2">
+            I'm a Technical Lead &amp; Architect and Senior UX/UI Designer at IDrive Software, based in Bangalore.
+            I have <strong>14+ years</strong> designing scalable SaaS and cloud platforms — expert in UX strategy,
+            design systems, and leading cross-functional teams to deliver high-impact digital products.
+          </p>
+          <p data-reveal data-reveal-delay="3">
+            I have a proven track record of improving onboarding, reducing support tickets, and accelerating delivery
+            through <strong>data-driven and AI-assisted workflows</strong> — and I love that I can both shape the
+            experience and speak the language of the engineers who build it.
+          </p>
+
+          <div class="edu" data-reveal data-reveal-delay="4">
+            <span class="ic"><i class="fa fa-graduation-cap"></i></span>
+            <span>
+              <div class="deg">Master of Computer Applications (MCA)</div>
+              <div class="uni">Bharathidasan University</div>
+            </span>
+          </div>
+
+          <div class="tool-cloud" data-reveal data-reveal-delay="5">
+            <span class="tool-chip"><i class="fab fa-figma"></i> Figma</span>
+            <span class="tool-chip"><i class="fa fa-vector-square"></i> Adobe XD</span>
+            <span class="tool-chip"><i class="fab fa-react"></i> React</span>
+            <span class="tool-chip"><i class="fab fa-python"></i> Python &amp; AI</span>
+            <span class="tool-chip"><i class="fa fa-robot"></i> MCP / Design-to-Code</span>
+            <span class="tool-chip"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tool-chip"><i class="fa fa-cube"></i> Electron</span>
+            <span class="tool-chip"><i class="fab fa-git-alt"></i> Git</span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-
-
-  <section class="section courses" id="Projects">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Projects</h6>
-            <!-- <h2>Projects</h2> -->
-          </div>
+      <!-- Skills -->
+      <div class="skills" data-reveal style="margin-top:60px;">
+        <div class="skill" data-skill="95">
+          <div class="skill__top"><span>UX Strategy &amp; UI Architecture</span><span>95%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
+        </div>
+        <div class="skill" data-skill="93">
+          <div class="skill__top"><span>Design Systems &amp; Prototyping</span><span>93%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
+        </div>
+        <div class="skill" data-skill="90">
+          <div class="skill__top"><span>User Research, A/B Testing &amp; Usability</span><span>90%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
+        </div>
+        <div class="skill" data-skill="88">
+          <div class="skill__top"><span>Front-end (HTML5, CSS3, JavaScript, React)</span><span>88%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
+        </div>
+        <div class="skill" data-skill="85">
+          <div class="skill__top"><span>AI-Integrated Design &amp; Automation</span><span>85%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
+        </div>
+        <div class="skill" data-skill="90">
+          <div class="skill__top"><span>Team Leadership (15+ designers &amp; engineers)</span><span>90%</span></div>
+          <div class="skill__bar"><span class="skill__fill"></span></div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">Development</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
-        </li>
-      </ul>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://www.idrive.com/"><img src="assets/images/projects-idrive.jpg" alt="IDrive.com"></a>
-              <span class="category">Cloud Backup</span>
-              <span class="price">
-                <h6><em>$</em>160</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">IDrive provides Online cloud Backup for PCs, Macs, iPhones, Android and other Mobile
-                Devices all into ONE account for one low fee.</span>
-              <h4>IDrive.com</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/ibackup.jpg" alt="IBackup.com"></a>
-              <span class="category">Cloud Backup</span>
-              <span class="price">
-                <h6><em>$</em>340</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Endpoint and Server Cloud Backup</span>
-              <h4>IBackup.com</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/idrivecompute.png" alt="idrivecompute"></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>640</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Edge Computing Infrastructure</span>
-              <h4>IDrivecompute.com</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
-          <div class="events_item">
-            <div class="thumb">
-              <a
-                href="https://blog.idrive.com/2021/02/04/idrive-releases-zipdrive-a-personal-edge-cloud-for-unlimited-secure-file-streaming/"><img
-                  src="assets/images/zipdrive.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price">
-                <h6><em>$</em>450</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Own Personal Edge Cloud</span>
-              <h4>ZipDrive.com</h4>
-            </div>
-          </div>
-        </div>
 
-        <!-- Remotedesktop.com -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
-          <div class="events_item">
-            <div class="thumb">
-              <a
-                href="https://blog.idrive.com/2021/09/10/idrive-introduces-remote-desktop-providing-secure-remote-access-to-windows-computers-and-servers-via-rdp/"><img
-                  src="assets/images/remotedesktop.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>320</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Providing Secure Remote Access to Windows Computers and Servers via RDP</span>
-              <h4>Remotedesktop.com</h4>
-            </div>
-          </div>
+      <!-- Stats -->
+      <div class="stats" style="margin-top:60px;">
+        <div class="stat" data-reveal>
+          <div class="num"><span data-to="14"></span><span class="suffix">+</span></div>
+          <div class="label">Years of experience</div>
         </div>
-
-
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://www.idrivemirror.com"><img src="assets/images/idrive_mirror.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Image backup to cloud With IDrive® Mirror backup your PCs and Windows server systems
-                directly to the cloud via web.</span>
-              <h4>IDriveMirror.com</h4>
-            </div>
-          </div>
+        <div class="stat" data-reveal data-reveal-delay="1">
+          <div class="num"><span data-to="4"></span><span class="suffix">M+</span></div>
+          <div class="label">Users served</div>
         </div>
-        <!-- End -->
-
-        <!-- start  | talqapp.com -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a
-                href="https://blog.idrive.com/2015/11/09/introducing-talq-the-app-that-lets-customers-message-businesses-anytime-anywhere/"><img
-                  src="assets/images/talq.png" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Privately connects customers to businesses via messaging</span>
-              <h4>talqapp.com</h4>
-            </div>
-          </div>
+        <div class="stat" data-reveal data-reveal-delay="2">
+          <div class="num"><span data-to="15"></span><span class="suffix">+</span></div>
+          <div class="label">Designers &amp; engineers led</div>
         </div>
-        <!-- End -->
-
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a
-                href="https://blog.idrive.com/2019/08/23/introducing-idrive-face-enabling-developers-and-businesses-to-build-facial-recognition-apps/">
-                <img src="assets/images/Idrive_Face.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Offers APIs for facial recognition with unlimited metadata
-                storage and image analysis. </span>
-              <h4>Face.idrive.com</h4>
-            </div>
-          </div>
+        <div class="stat" data-reveal data-reveal-delay="3">
+          <div class="num"><span data-to="90"></span><span class="suffix">%</span></div>
+          <div class="label">Subscription uplift</div>
         </div>
-        <!-- End -->
-
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="">
-                <img src="assets/images/IDrive_editro_choice.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author"> IDrive is very proud to receive the Editors Choice Award for the 10th year in a row
-                as it serves as a testament to our dedication to excellence.</span>
-              <!-- <h4>Face.idrive.com</h4> -->
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://www.idrive.com/bare-metal-recovery/"><img src="assets/images/bmr_dashboard_page.png"
-                  alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Onsite Bare-metal Disaster Recovery</span>
-              <h4>IDrive® BMR</h4>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://www.idrive.com/reseller/partner-management"><img src="assets/images/BMR_partner.webp"
-                  alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Partner Management Console for Resellers</span>
-              <h4>IDrive BMR MSP</h4>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-        <!-- start -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a
-                href="https://blog.idrive.com/2016/07/14/introducing-idrive-vault-a-hybrid-backup-appliance-for-businesses/"><img
-                  src="assets/images/idrive-vault.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">IDrive Vault, a Hybrid Backup Appliance for Businesses</span>
-              <!-- <h4>IDrive BMR MSP</h4> -->
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-
       </div>
     </div>
   </section>
 
-  <div class="section fun-facts">
+  <!-- Services -->
+  <section class="section" id="services">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                  <p class="count-text ">Happy Students</p>
-                </div>
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>What I do</span>
+        <h2 data-reveal data-reveal-delay="1">From strategy to shipped, AI-accelerated design</h2>
+        <p data-reveal data-reveal-delay="2">End-to-end capability — from the first user interview to production-ready, accessible interfaces and design-to-code handoff.</p>
+      </div>
+      <div class="cards">
+        <div class="card" data-reveal>
+          <div class="card__icon"><i class="fa fa-sitemap"></i></div>
+          <h4>UX/UI Architecture</h4>
+          <p>Translating business requirements into intuitive, high-quality interface designs — architecting workflows, wireframes, prototypes, and design systems aligned to user needs and brand.</p>
+          <div class="tags"><span>Wireframes</span><span>IA</span><span>Prototypes</span></div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-compass"></i></div>
+          <h4>UX Strategy &amp; Research</h4>
+          <p>UX strategies that enhance usability, accessibility (WCAG), and end-to-end journeys. I lead user research and usability testing, feeding insight into iterative design.</p>
+          <div class="tags"><span>Research</span><span>A/B Testing</span><span>Journeys</span></div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-layer-group"></i></div>
+          <h4>Design Systems</h4>
+          <p>Scalable component libraries, tokens, and Storybook-backed documentation that keep design and engineering fast, consistent, and in sync across platforms.</p>
+          <div class="tags"><span>Components</span><span>Tokens</span><span>Storybook</span></div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><i class="fa fa-robot"></i></div>
+          <h4>AI-Integrated Design</h4>
+          <p>Design-to-code pipelines using MCP models and AI orchestration (Copilot, GPT, Gemini, Locofy, Kombai) — turning concepts into code with up to 99.9% accuracy.</p>
+          <div class="tags"><span>MCP</span><span>Design-to-Code</span><span>Automation</span></div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-code"></i></div>
+          <h4>Front-End Collaboration</h4>
+          <p>Guiding UI implementation with modern web tech (HTML5, CSS3, JavaScript, React, Electron) — ensuring cross-browser compatibility, responsiveness, and performance.</p>
+          <div class="tags"><span>React</span><span>Responsive</span><span>Performance</span></div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-users-gear"></i></div>
+          <h4>Technical Leadership</h4>
+          <p>Leading 15+ designers and engineers across offshore teams — providing direction, impact assessments, stakeholder management, and consistent UI implementation.</p>
+          <div class="tags"><span>Mentoring</span><span>Agile/Scrum</span><span>Stakeholders</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Career</span>
+        <h2 data-reveal data-reveal-delay="1">A journey through <span class="gradient-text">14+ years</span> of design</h2>
+        <p data-reveal data-reveal-delay="2">From hands-on web design to leading UX/UI &amp; architecture for global cloud products.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item" data-reveal>
+          <span class="tl-dot"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="company">IDrive Software India Pvt Ltd · Bangalore</div>
+                <h4>Technical Lead — UI/UX &amp; Architecture</h4>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
-                </div>
-              </div>
+              <span class="tl-when">2012 — Present</span>
             </div>
+            <p>Lead a cross-functional team of 15+ designers and engineers, driving the UX vision for a global cloud-backup platform serving 4M users. Architect UI/UX for Electron apps across Linux, Windows &amp; macOS, and pioneer AI-integrated prototyping and design-to-code workflows (MCP, Copilot, GPT, Gemini) with 99.9% accuracy — cutting handoff time by 30%.</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> 13+ years</span>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <span class="tl-dot"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="company">JBK InfoTech Pvt Ltd · Bangalore</div>
+                <h4>Senior Web Designer / UI Developer</h4>
+              </div>
+              <span class="tl-when">2011 — 2012</span>
+            </div>
+            <p>Led UI design and front-end development for enterprise-grade projects, ensuring responsive architecture and seamless design-to-development handoffs.</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> ~1 year</span>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <span class="tl-dot"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="company">Qwikinet Pvt Ltd · Chennai</div>
+                <h4>Web Designer</h4>
+              </div>
+              <span class="tl-when">2010 — 2011</span>
+            </div>
+            <p>Developed functional UI components for high-traffic web applications, focusing on usability best practices and cross-browser compatibility — where the craft began.</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> ~1 year</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="team section" id="team">
+  <!-- Case Studies -->
+  <section class="section" id="cases">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-01.jpg" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Impact</span>
+        <h2 data-reveal data-reveal-delay="1">Featured case studies</h2>
+        <p data-reveal data-reveal-delay="2">Real outcomes from real products — measured, not guessed.</p>
+      </div>
+
+      <div class="cases">
+        <div class="case" data-reveal>
+          <div class="case__metric">40<span class="unit">%</span></div>
+          <span class="tag">Cloud Backup UX Redesign</span>
+          <h4>Faster Time-to-First-Backup</h4>
+          <p>Simplified complex backup workflows into a guided, wizard-driven UI — reducing Time-to-First-Backup by 40% and cutting support tickets by 25% while improving onboarding clarity and user success.</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-02.jpg" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
+
+        <div class="case" data-reveal data-reveal-delay="1">
+          <div class="case__metric">99.9<span class="unit">%</span></div>
+          <span class="tag">AI Design-to-Code Workflow</span>
+          <h4>Automated design-to-code accuracy</h4>
+          <p>Built an automated design-to-code pipeline using MCP models and AI orchestration — saving 15+ engineering hours per sprint and reducing handoff time by 30% at 99.9% accuracy.</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
+
+        <div class="case" data-reveal>
+          <div class="case__metric">500K<span class="unit">+</span></div>
+          <span class="tag">Mobile Experience Optimization</span>
+          <h4>Downloads on the App Store</h4>
+          <p>Redesigned the mobile experience with an offline-first approach for field engineers — achieving a 4.2★ rating and exceeding 500K+ downloads.</p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
+
+        <div class="case" data-reveal data-reveal-delay="1">
+          <div class="case__metric">100<span class="unit">%</span></div>
+          <span class="tag">AI-Powered Research &amp; Web Deployment</span>
+          <h4>Automated research ingestion</h4>
+          <p>Built AI-integrated web pages for Data Science/AI applications plus a custom Python AI agent monitoring Zenodo for research updates — enabling rapid deployment with fully automated notification &amp; download workflows.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section testimonials">
+  <!-- Work -->
+  <section class="section" id="work">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-carousel owl-testimonials">
-            <div class="item">
-              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to
-                download free templates. Thank you for visiting.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Full Stack Master</span>
-                <h4>Claude David</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS
-                layout is based on Bootstrap v5.3.0 framework.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
-              </div>
-            </div>
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Portfolio</span>
+        <h2 data-reveal data-reveal-delay="1">Products I've helped design &amp; ship</h2>
+        <p data-reveal data-reveal-delay="2">Live, real-world products I've led the UX/UI for at IDrive — serving millions of users worldwide. Hover a card and open the live site or design walkthrough.</p>
+      </div>
+
+      <div class="filters" data-reveal>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="backup">Cloud Backup</button>
+        <button class="filter-btn" data-filter="remote">Remote Access</button>
+        <button class="filter-btn" data-filter="web">Web &amp; AI</button>
+      </div>
+
+      <div class="work-grid">
+        <article class="work" data-cat="backup" data-reveal>
+          <div class="work__thumb"><img src="assets/images/shots/shot-idrive.png" alt="IDrive.com homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>IDrive.com</h4>
+            <p>Online cloud backup for PCs, Macs, iPhone &amp; Android — all in one account.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/0821f25b-2940-4e9f-8d31-97e23adb2587-5d72/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
           </div>
+          <a class="work__arrow" href="https://www.idrive.com" target="_blank" rel="noopener" aria-label="Visit IDrive.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+          <div class="work__thumb"><img src="assets/images/shots/shot-ibackup.png" alt="IBackup.com homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>IBackup.com</h4>
+            <p>Endpoint and server cloud backup trusted by 100,000+ small businesses.</p>
+            <a class="work__more" href="https://www.ibackup.com" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.ibackup.com" target="_blank" rel="noopener" aria-label="Visit IBackup.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+          <div class="work__thumb"><img src="assets/images/shots/shot-endpoint.png" alt="IDrive Endpoint Backup homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>IDrive Endpoint Backup</h4>
+            <p>Endpoint, server &amp; SaaS cloud backup for MSPs and enterprise IT teams.</p>
+            <a class="work__more" href="https://www.idrive.com/endpoint-backup/" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/endpoint-backup/" target="_blank" rel="noopener" aria-label="Visit IDrive Endpoint Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal>
+          <div class="work__thumb"><img src="assets/images/shots/shot-mirror.png" alt="IDrive Mirror homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>IDrive Mirror</h4>
+            <p>Cloud-based disk image backup — protect multiple machines in one account.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/a57e816c-5a6f-42ac-9317-41b5f2835e20-f02d/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrivemirror.com" target="_blank" rel="noopener" aria-label="Visit IDrive Mirror"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+          <div class="work__thumb"><img src="assets/images/shots/shot-bmr.png" alt="IDrive BMR Pro homepage" loading="lazy"></div>
+          <span class="work__cat">Disaster Recovery</span>
+          <div class="work__body">
+            <h4>IDrive BMR</h4>
+            <p>Onsite bare-metal disaster recovery for businesses, plus a partner program.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/65a096c3-45d1-4d5e-9ca1-d6dbe8f3091d-30f3/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/bmr" target="_blank" rel="noopener" aria-label="Visit IDrive BMR"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+          <div class="work__thumb"><img src="assets/images/shots/shot-synology.png" alt="IDrive Synology Backup homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>Synology Backup</h4>
+            <p>Secure cloud backup for Synology NAS devices, with versioning &amp; encryption.</p>
+            <a class="work__more" href="https://www.idrive.com/synology-backup" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/synology-backup" target="_blank" rel="noopener" aria-label="Visit Synology Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal>
+          <div class="work__thumb"><img src="assets/images/shots/shot-nas.png" alt="IDrive NAS Backup homepage" loading="lazy"></div>
+          <span class="work__cat">Cloud Backup</span>
+          <div class="work__body">
+            <h4>NAS Backup</h4>
+            <p>Cloud backup for network-attached storage across brands and platforms.</p>
+            <a class="work__more" href="https://www.idrive.com/nas-backup" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/nas-backup" target="_blank" rel="noopener" aria-label="Visit NAS Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+          <div class="work__thumb"><img src="assets/images/shots/shot-vmware.png" alt="IDrive VMware Backup homepage" loading="lazy"></div>
+          <span class="work__cat">Server Backup</span>
+          <div class="work__body">
+            <h4>VMware Backup</h4>
+            <p>Full &amp; incremental backup for VMware ESXi and vCenter environments.</p>
+            <a class="work__more" href="https://www.idrive.com/online-backup-vmware/" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/online-backup-vmware/" target="_blank" rel="noopener" aria-label="Visit VMware Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+          <div class="work__thumb"><img src="assets/images/shots/shot-hyperv.png" alt="IDrive Hyper-V Backup homepage" loading="lazy"></div>
+          <span class="work__cat">Server Backup</span>
+          <div class="work__body">
+            <h4>Hyper-V Backup</h4>
+            <p>Cloud backup &amp; recovery for Microsoft Hyper-V virtual machines.</p>
+            <a class="work__more" href="https://www.idrive.com/online-backup-hyper-v/" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/online-backup-hyper-v/" target="_blank" rel="noopener" aria-label="Visit Hyper-V Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="remote" data-reveal>
+          <div class="work__thumb"><img src="assets/images/shots/shot-remotepc.png" alt="RemotePC homepage" loading="lazy"></div>
+          <span class="work__cat">Remote Access</span>
+          <div class="work__body">
+            <h4>RemotePC</h4>
+            <p>Secure remote access to your PC or Mac — used by teams and enterprises.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/c3700946-63ce-4e73-9938-3ac17d6b778a-9623/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.remotepc.com" target="_blank" rel="noopener" aria-label="Visit RemotePC"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="remote" data-reveal data-reveal-delay="1">
+          <div class="work__thumb"><img src="assets/images/shots/shot-remotedesktop.png" alt="RemoteDesktop.com homepage" loading="lazy"></div>
+          <span class="work__cat">Remote Access</span>
+          <div class="work__body">
+            <h4>RemoteDesktop.com</h4>
+            <p>Secure RDP access to Windows computers &amp; servers, plus meeting tools.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/40891017-da45-4af4-bad7-b01331d36468-15da/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.remotedesktop.com" target="_blank" rel="noopener" aria-label="Visit RemoteDesktop.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="remote" data-reveal data-reveal-delay="2">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-handshake"></i><span>IDrive BMR MSP</span><small>Reseller Console</small></span>
+          </div>
+          <span class="work__cat">Remote Access</span>
+          <div class="work__body">
+            <h4>IDrive BMR MSP</h4>
+            <p>Partner-management console &amp; enterprise dashboard for resellers.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/caa900fc-2709-40c3-9058-dc3b4746140b-9ffa/screen/68b5dc5d-75c8-4ff8-a3fc-c9e01489bf27" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/caa900fc-2709-40c3-9058-dc3b4746140b-9ffa/screen/68b5dc5d-75c8-4ff8-a3fc-c9e01489bf27" target="_blank" rel="noopener" aria-label="View IDrive BMR MSP design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="web" data-reveal>
+          <div class="work__thumb"><img src="assets/images/shots/shot-ssmtheory.png" alt="SSM Theory site" loading="lazy"></div>
+          <span class="work__cat">Web &amp; AI</span>
+          <div class="work__body">
+            <h4>SSM Theory</h4>
+            <p>AI-integrated research site for the Selection-Stitch Model &amp; quantum computing.</p>
+            <a class="work__more" href="https://www.idrive.com/ssmtheory/" target="_blank" rel="noopener">Visit live site <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://www.idrive.com/ssmtheory/" target="_blank" rel="noopener" aria-label="Visit SSM Theory"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="1">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-bolt"></i><span>ZipDrive</span><small>Edge Cloud</small></span>
+          </div>
+          <span class="work__cat">Web &amp; AI</span>
+          <div class="work__body">
+            <h4>ZipDrive.com</h4>
+            <p>Personal edge cloud for secure file streaming &amp; sharing, anywhere.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/96f1b727-6784-4888-9fd7-ada19f4eeb3d-c3a2/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/96f1b727-6784-4888-9fd7-ada19f4eeb3d-c3a2/grid" target="_blank" rel="noopener" aria-label="View ZipDrive design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="2">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-camera"></i><span>Face.idrive.com</span><small>AI Vision APIs</small></span>
+          </div>
+          <span class="work__cat">Web &amp; AI</span>
+          <div class="work__body">
+            <h4>Face.idrive.com</h4>
+            <p>Facial-recognition APIs with unlimited metadata storage &amp; image analysis.</p>
+          </div>
+        </article>
+
+        <article class="work" data-cat="web" data-reveal>
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-comments"></i><span>talqApp</span><small>Messaging</small></span>
+          </div>
+          <span class="work__cat">Web &amp; App</span>
+          <div class="work__body">
+            <h4>talqApp.com</h4>
+            <p>Privately connects customers to businesses through real-time messaging.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="work-note" data-reveal>Plus IDrive Compute, e2 object storage, IDrive 360, and native mobile apps — full Adobe XD walkthroughs available on request.</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" id="certs">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Credentials</span>
+        <h2 data-reveal data-reveal-delay="1">Google-certified, results-driven</h2>
+        <p data-reveal data-reveal-delay="2">Professional certifications completed with top grades — verifiable on Coursera.</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert" data-reveal>
+          <div class="cert__top">
+            <span class="cert__badge"><i class="fab fa-google"></i></span>
+            <span class="cert__grade">93%</span>
+          </div>
+          <h4>Google UX Design — User Experience</h4>
+          <div class="issuer">Coursera · Google</div>
+          <ul class="cert-meta">
+            <li><i class="fa fa-calendar"></i> Completed July 11, 2022</li>
+            <li><i class="fa fa-hourglass-half"></i> ~19 hours of coursework</li>
+            <li><i class="fa fa-trophy"></i> Grade achieved: 93%</li>
+          </ul>
+          <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/4FBF855XLU7M" target="_blank" rel="noopener">
+            Verify certificate <i class="fa fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio,
-              templatemo gallery, templatemo blue color, etc.</p>
+
+        <div class="cert" data-reveal data-reveal-delay="1">
+          <div class="cert__top">
+            <span class="cert__badge"><i class="fab fa-google"></i></span>
+            <span class="cert__grade">95%</span>
           </div>
+          <h4>Google Project Management</h4>
+          <div class="issuer">Coursera · Google</div>
+          <ul class="cert-meta">
+            <li><i class="fa fa-calendar"></i> Completed May 31, 2022</li>
+            <li><i class="fa fa-hourglass-half"></i> ~18 hours of coursework</li>
+            <li><i class="fa fa-trophy"></i> Grade achieved: 95%</li>
+          </ul>
+          <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/K56SG442GV8T" target="_blank" rel="noopener">
+            Verify certificate <i class="fa fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="cert" data-reveal data-reveal-delay="2">
+          <div class="cert__top">
+            <span class="cert__badge"><i class="fab fa-google"></i></span>
+            <span class="cert__grade">91.8%</span>
+          </div>
+          <h4>Google UX Design — Design Process</h4>
+          <div class="issuer">Coursera · Google</div>
+          <ul class="cert-meta">
+            <li><i class="fa fa-calendar"></i> Completed November 7, 2022</li>
+            <li><i class="fa fa-hourglass-half"></i> ~21 hours of coursework</li>
+            <li><i class="fa fa-trophy"></i> Grade achieved: 91.87%</li>
+          </ul>
+          <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/27DGATMQ6BUM" target="_blank" rel="noopener">
+            Verify certificate <i class="fa fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-
-  <div class="contact-us section" id="contact">
+  <!-- Contact -->
+  <section class="section" id="contact">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6  align-self-center">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for visiting my website. I have good knowledge in web platforms. Please contact me if you
-              require any help.</p>
-            <div class="special-offer" style="display: none;">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a class="right_ui" href="#"><i class="fa fa-angle-right"></i></a>
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Contact</span>
+        <h2 data-reveal data-reveal-delay="1">Let's build something <span class="gradient-text">people love</span></h2>
+        <p data-reveal data-reveal-delay="2">Open to design leadership roles, UX/UI projects, and consulting. Reach out — I'd love to hear what you're building.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <h3 style="font-size:1.4rem;">Get in touch</h3>
+          <p>I welcome the opportunity to discuss how my experience in UX architecture, design leadership, and AI-assisted workflows aligns with your goals.</p>
+          <div class="contact-list">
+            <a href="mailto:sakthi.vdl@gmail.com">
+              <span class="ic"><i class="fa fa-envelope"></i></span>
+              <span>
+                <span class="label">Email</span><br>
+                <span class="val">sakthi.vdl@gmail.com</span>
+              </span>
+            </a>
+            <a href="tel:+919945553867">
+              <span class="ic"><i class="fa fa-phone"></i></span>
+              <span>
+                <span class="label">Phone</span><br>
+                <span class="val">+91 99455 53867</span>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/sakthivadivel-ganesan-designer" target="_blank" rel="noopener">
+              <span class="ic"><i class="fab fa-linkedin-in"></i></span>
+              <span>
+                <span class="label">LinkedIn</span><br>
+                <span class="val">/in/sakthivadivel-ganesan-designer</span>
+              </span>
+            </a>
+            <div>
+              <span class="ic"><i class="fa fa-location-dot"></i></span>
+              <span>
+                <span class="label">Location</span><br>
+                <span class="val">Bangalore, India · Available remote worldwide</span>
+              </span>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="contact-us-content">
-            <form id="contact-form" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..."
-                      required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
+
+        <form class="contact-form" id="contact-form" novalidate
+              action="https://formsubmit.co/sakthi.vdl@gmail.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New portfolio enquiry">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" required>
+            <span class="field-error" data-for="name"></span>
           </div>
-        </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" autocomplete="email" required>
+            <span class="field-error" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="message">Tell me about your project</label>
+            <textarea id="message" name="message" placeholder="A few lines about what you're building…" required></textarea>
+            <span class="field-error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" data-magnetic style="width:100%;justify-content:center;">
+            Send Message <i class="fa fa-paper-plane"></i>
+          </button>
+          <div class="form-note" role="status" aria-live="polite">I'll receive your message by email and reply within a day.</div>
+        </form>
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2024 sakthivadivel. All rights reserved. &nbsp;&nbsp;&nbsp;</p>
+      <div class="footer-grid">
+        <a href="#top" class="logo">sakthivadivel<span class="dot">.</span></a>
+        <p>© <span id="year">2024</span> Sakthivadivel Ganesan. Designed &amp; built with care.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sakthivadivel-ganesan-designer" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:sakthi.vdl@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="tel:+919945553867" aria-label="Phone"><i class="fa fa-phone"></i></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <button class="to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
