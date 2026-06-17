@@ -7,6 +7,20 @@
   <meta name="description" content="Sakthivadivel Ganesan — Technical Lead & Architect, UX/UI Designer with 14+ years designing scalable SaaS & cloud platforms used by 4M+ users. Google-certified, AI-integrated design leader.">
   <meta name="theme-color" content="#07070c">
 
+  <!-- Set theme before paint to avoid a flash of the wrong colors -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme") || "system";
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var effective = stored === "system" ? (dark ? "dark" : "light") : stored;
+        document.documentElement.setAttribute("data-theme", effective);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
   <meta property="og:title" content="Sakthivadivel Ganesan — Technical Lead & UX/UI Designer">
   <meta property="og:description" content="UX Lead with 14+ years designing scalable SaaS & cloud platforms used by 4M+ users. Google-certified, AI-integrated design leader.">
   <meta property="og:type" content="website">
@@ -51,15 +65,18 @@
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <a href="#top" class="logo">sakthivadivel<span class="dot">.</span></a>
+        <a href="#top" class="logo" aria-label="Home — Sakthivadivel Ganesan">SG<span class="dot">.</span></a>
         <ul class="nav-links">
           <li><a href="#top" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#ai">AI</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#tools">Tools</a></li>
           <li><a href="#cases">Case Studies</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#certs">Certs</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-cta">
@@ -306,6 +323,62 @@
     </div>
   </section>
 
+  <!-- AI-First Design -->
+  <section class="section ai-spotlight" id="ai">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow ai-eyebrow" data-reveal>AI-First Design</span>
+        <h2 data-reveal data-reveal-delay="1">I design — and build — at the <span class="gradient-text">speed of AI</span></h2>
+        <p data-reveal data-reveal-delay="2">I work AI-first today — weaving generative AI into every stage of the product process, from prototyping to production code, to ship faster, smarter, and at higher quality.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card ai-card" data-reveal>
+          <div class="card__icon"><i class="fa fa-wand-magic-sparkles"></i></div>
+          <h4>AI-Integrated Prototyping</h4>
+          <p>Generative-AI-assisted exploration that turns concepts into high-fidelity, testable prototypes in a fraction of the usual time.</p>
+          <div class="tags"><span>GenAI</span><span>Rapid concepts</span></div>
+        </div>
+        <div class="card ai-card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-diagram-project"></i></div>
+          <h4>Design-to-Code with MCP</h4>
+          <p>Automated design-to-code pipelines using MCP models with GitHub Copilot, ChatGPT &amp; Gemini — 99.9% accuracy and 30% less handoff time.</p>
+          <div class="tags"><span>MCP</span><span>Copilot</span><span>Gemini</span></div>
+        </div>
+        <div class="card ai-card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-robot"></i></div>
+          <h4>Python AI Agents</h4>
+          <p>Custom Python AI agents for automation and server-side execution — including a Zenodo research-monitoring agent with 100% automated workflows.</p>
+          <div class="tags"><span>Python</span><span>Agents</span><span>Automation</span></div>
+        </div>
+        <div class="card ai-card" data-reveal>
+          <div class="card__icon"><i class="fa fa-microchip"></i></div>
+          <h4>AI Tooling Mastery</h4>
+          <p>Figma with Locofy, Kombai &amp; Anima; VS Code MCP models; and Copilot, ChatGPT &amp; Gemini woven into a modern, end-to-end design workflow.</p>
+          <div class="tags"><span>Figma AI</span><span>Locofy</span><span>Kombai</span></div>
+        </div>
+        <div class="card ai-card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-globe"></i></div>
+          <h4>AI-Built Web Experiences</h4>
+          <p>AI-generated web experiences for Data Science &amp; AI products — like SSM Theory — rapidly deployed without a full-stack team.</p>
+          <div class="tags"><span>AI sites</span><span>Fast deploy</span></div>
+        </div>
+        <div class="card ai-card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-brain"></i></div>
+          <h4>AI-Accelerated Delivery</h4>
+          <p>Embedding AI across research, design, and engineering hand-off to compress timelines while raising quality and consistency.</p>
+          <div class="tags"><span>Velocity</span><span>Quality</span></div>
+        </div>
+      </div>
+
+      <div class="ai-metrics" data-reveal>
+        <div class="ai-metric"><strong>99.9%</strong><span>design-to-code accuracy</span></div>
+        <div class="ai-metric"><strong>30%</strong><span>less handoff time</span></div>
+        <div class="ai-metric"><strong>15+ hrs</strong><span>saved per sprint</span></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience -->
   <section class="section" id="experience">
     <div class="container">
@@ -321,13 +394,13 @@
           <div class="tl-card">
             <div class="tl-head">
               <div>
-                <div class="company">IDrive Software India Pvt Ltd · Bangalore</div>
-                <h4>Technical Lead — UI/UX &amp; Architecture</h4>
+                <div class="company">IDrive Software India Pvt Ltd · Bengaluru</div>
+                <h4>Technical Lead — UX/UI Designer &amp; Architect</h4>
               </div>
               <span class="tl-when">2012 — Present</span>
             </div>
-            <p>Lead a cross-functional team of 15+ designers and engineers, driving the UX vision for a global cloud-backup platform serving 4M users. Architect UI/UX for Electron apps across Linux, Windows &amp; macOS, and pioneer AI-integrated prototyping and design-to-code workflows (MCP, Copilot, GPT, Gemini) with 99.9% accuracy — cutting handoff time by 30%.</p>
-            <span class="tl-dur"><i class="fa fa-clock"></i> 13+ years</span>
+            <p>Own the UX/UI design strategy for all of IDrive's cloud-storage products across every screen-based platform, leading a cross-functional team of 15+ designers and engineers for a platform serving 4M+ users. Architect UI/UX for Electron apps across Windows, macOS &amp; Linux, define design systems and information architecture, and partner with Product Management on current and future pipelines. Pioneered AI-integrated prototyping and design-to-code workflows (MCP, Copilot, GPT, Gemini) at 99.9% accuracy — cutting handoff time by 30%.</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> 14+ years</span>
           </div>
         </div>
 
@@ -336,13 +409,13 @@
           <div class="tl-card">
             <div class="tl-head">
               <div>
-                <div class="company">JBK InfoTech Pvt Ltd · Bangalore</div>
-                <h4>Senior Web Designer / UI Developer</h4>
+                <div class="company">JBK Infotech Pvt Ltd · Bengaluru</div>
+                <h4>Senior Web Designer</h4>
               </div>
               <span class="tl-when">2011 — 2012</span>
             </div>
-            <p>Led UI design and front-end development for enterprise-grade projects, ensuring responsive architecture and seamless design-to-development handoffs.</p>
-            <span class="tl-dur"><i class="fa fa-clock"></i> ~1 year</span>
+            <p>Responsible for the development and delivery of web application pages, building HTML prototypes that showcased business benefits and integrating the product into the technical platform. Coordinated closely with the graphics and development teams and presented to key internal and external stakeholders, delivering interfaces across desktop, tablet and mobile (iPad, iPhone, Android).</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> 7 months</span>
           </div>
         </div>
 
@@ -351,13 +424,78 @@
           <div class="tl-card">
             <div class="tl-head">
               <div>
-                <div class="company">Qwikinet Pvt Ltd · Chennai</div>
-                <h4>Web Designer</h4>
+                <div class="company">Qwikisoft · Chennai</div>
+                <h4>Web Designer / Senior UI Developer</h4>
               </div>
-              <span class="tl-when">2010 — 2011</span>
+              <span class="tl-when">2011</span>
             </div>
-            <p>Developed functional UI components for high-traffic web applications, focusing on usability best practices and cross-browser compatibility — where the craft began.</p>
-            <span class="tl-dur"><i class="fa fa-clock"></i> ~1 year</span>
+            <p>Handled diagnosing, quality checking, website performance testing, code &amp; asset optimization and cross-browser compatibility, owning requirements, design, development, deployment and support of deliverables. Engaged directly with project consultants and reported to the Development, Security and Application Platform managers — where the craft began.</p>
+            <span class="tl-dur"><i class="fa fa-clock"></i> 7 months</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Technologies -->
+  <section class="section" id="tools">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Toolbox</span>
+        <h2 data-reveal data-reveal-delay="1">Tools &amp; <span class="gradient-text">technologies</span></h2>
+        <p data-reveal data-reveal-delay="2">A scannable view of the platforms, languages and tools I work with across design and front-end engineering.</p>
+      </div>
+      <div class="cards">
+        <div class="card" data-reveal>
+          <div class="card__icon"><i class="fa fa-pen-ruler"></i></div>
+          <h4>Design &amp; UX</h4>
+          <div class="tags">
+            <span>Figma</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span>
+            <span>Axure</span><span>Dreamweaver</span><span>Wireframing</span><span>Prototyping</span>
+            <span>Information Architecture</span><span>Design Systems</span><span>3ds Max</span>
+          </div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-code"></i></div>
+          <h4>Front-End</h4>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>SASS / LESS</span><span>JavaScript</span>
+            <span>TypeScript</span><span>React</span><span>Angular</span><span>jQuery</span>
+            <span>Bootstrap</span><span>Foundation</span><span>Electron</span>
+          </div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-cloud"></i></div>
+          <h4>Cloud, Servers &amp; DevOps</h4>
+          <div class="tags">
+            <span>AWS</span><span>Node.js</span><span>REST APIs</span><span>JSON / XML</span>
+            <span>Apache Tomcat</span><span>WebLogic</span><span>Nginx</span><span>IIS</span>
+            <span>Git</span><span>SVN</span>
+          </div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><i class="fa fa-list-check"></i></div>
+          <h4>Practices &amp; Quality</h4>
+          <div class="tags">
+            <span>Agile / Scrum</span><span>MVC</span><span>Stakeholder Management</span>
+            <span>Accessibility (WCAG)</span><span>Cross-browser</span><span>Selenium</span>
+            <span>JUnit</span><span>SEO</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="1">
+          <div class="card__icon"><i class="fa fa-robot"></i></div>
+          <h4>AI &amp; Automation</h4>
+          <div class="tags">
+            <span>MCP models</span><span>GitHub Copilot</span><span>ChatGPT</span><span>Gemini</span>
+            <span>Locofy</span><span>Kombai</span><span>Anima</span><span>Python AI agents</span>
+          </div>
+        </div>
+        <div class="card" data-reveal data-reveal-delay="2">
+          <div class="card__icon"><i class="fa fa-users-gear"></i></div>
+          <h4>Leadership &amp; Collaboration</h4>
+          <div class="tags">
+            <span>Team Leadership</span><span>Mentoring</span><span>Product Collaboration</span>
+            <span>Design-to-Dev Handoff</span><span>Roadmapping</span><span>Global Teams</span>
           </div>
         </div>
       </div>
@@ -411,18 +549,18 @@
       <div class="section-head center">
         <span class="eyebrow" data-reveal>Portfolio</span>
         <h2 data-reveal data-reveal-delay="1">Products I've helped design &amp; ship</h2>
-        <p data-reveal data-reveal-delay="2">Live, real-world products I've led the UX/UI for at IDrive — serving millions of users worldwide. Hover a card and open the live site or design walkthrough.</p>
+        <p data-reveal data-reveal-delay="2">Real products I've led the UX/UI for at IDrive — spanning websites, desktop apps, and mobile apps, serving millions of users worldwide. Filter by platform.</p>
       </div>
 
       <div class="filters" data-reveal>
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="backup">Cloud Backup</button>
-        <button class="filter-btn" data-filter="remote">Remote Access</button>
-        <button class="filter-btn" data-filter="web">Web &amp; AI</button>
+        <button class="filter-btn" data-filter="web">Websites</button>
+        <button class="filter-btn" data-filter="desktop">Desktop Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
       </div>
 
       <div class="work-grid">
-        <article class="work" data-cat="backup" data-reveal>
+        <article class="work" data-cat="web" data-reveal>
           <div class="work__thumb"><img src="assets/images/shots/shot-idrive.png" alt="IDrive.com homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -433,7 +571,7 @@
           <a class="work__arrow" href="https://www.idrive.com" target="_blank" rel="noopener" aria-label="Visit IDrive.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="1">
           <div class="work__thumb"><img src="assets/images/shots/shot-ibackup.png" alt="IBackup.com homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -444,7 +582,7 @@
           <a class="work__arrow" href="https://www.ibackup.com" target="_blank" rel="noopener" aria-label="Visit IBackup.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="2">
           <div class="work__thumb"><img src="assets/images/shots/shot-endpoint.png" alt="IDrive Endpoint Backup homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -455,7 +593,7 @@
           <a class="work__arrow" href="https://www.idrive.com/endpoint-backup/" target="_blank" rel="noopener" aria-label="Visit IDrive Endpoint Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal>
+        <article class="work" data-cat="web" data-reveal>
           <div class="work__thumb"><img src="assets/images/shots/shot-mirror.png" alt="IDrive Mirror homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -466,7 +604,7 @@
           <a class="work__arrow" href="https://www.idrivemirror.com" target="_blank" rel="noopener" aria-label="Visit IDrive Mirror"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="1">
           <div class="work__thumb"><img src="assets/images/shots/shot-bmr.png" alt="IDrive BMR Pro homepage" loading="lazy"></div>
           <span class="work__cat">Disaster Recovery</span>
           <div class="work__body">
@@ -477,7 +615,7 @@
           <a class="work__arrow" href="https://www.idrive.com/bmr" target="_blank" rel="noopener" aria-label="Visit IDrive BMR"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="2">
           <div class="work__thumb"><img src="assets/images/shots/shot-synology.png" alt="IDrive Synology Backup homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -488,7 +626,7 @@
           <a class="work__arrow" href="https://www.idrive.com/synology-backup" target="_blank" rel="noopener" aria-label="Visit Synology Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal>
+        <article class="work" data-cat="web" data-reveal>
           <div class="work__thumb"><img src="assets/images/shots/shot-nas.png" alt="IDrive NAS Backup homepage" loading="lazy"></div>
           <span class="work__cat">Cloud Backup</span>
           <div class="work__body">
@@ -499,7 +637,7 @@
           <a class="work__arrow" href="https://www.idrive.com/nas-backup" target="_blank" rel="noopener" aria-label="Visit NAS Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="1">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="1">
           <div class="work__thumb"><img src="assets/images/shots/shot-vmware.png" alt="IDrive VMware Backup homepage" loading="lazy"></div>
           <span class="work__cat">Server Backup</span>
           <div class="work__body">
@@ -510,7 +648,7 @@
           <a class="work__arrow" href="https://www.idrive.com/online-backup-vmware/" target="_blank" rel="noopener" aria-label="Visit VMware Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="backup" data-reveal data-reveal-delay="2">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="2">
           <div class="work__thumb"><img src="assets/images/shots/shot-hyperv.png" alt="IDrive Hyper-V Backup homepage" loading="lazy"></div>
           <span class="work__cat">Server Backup</span>
           <div class="work__body">
@@ -521,7 +659,7 @@
           <a class="work__arrow" href="https://www.idrive.com/online-backup-hyper-v/" target="_blank" rel="noopener" aria-label="Visit Hyper-V Backup"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="remote" data-reveal>
+        <article class="work" data-cat="web" data-reveal>
           <div class="work__thumb"><img src="assets/images/shots/shot-remotepc.png" alt="RemotePC homepage" loading="lazy"></div>
           <span class="work__cat">Remote Access</span>
           <div class="work__body">
@@ -532,7 +670,7 @@
           <a class="work__arrow" href="https://www.remotepc.com" target="_blank" rel="noopener" aria-label="Visit RemotePC"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="remote" data-reveal data-reveal-delay="1">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="1">
           <div class="work__thumb"><img src="assets/images/shots/shot-remotedesktop.png" alt="RemoteDesktop.com homepage" loading="lazy"></div>
           <span class="work__cat">Remote Access</span>
           <div class="work__body">
@@ -543,7 +681,7 @@
           <a class="work__arrow" href="https://www.remotedesktop.com" target="_blank" rel="noopener" aria-label="Visit RemoteDesktop.com"><i class="fa fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="work" data-cat="remote" data-reveal data-reveal-delay="2">
+        <article class="work" data-cat="web" data-reveal data-reveal-delay="2">
           <div class="work__thumb brand">
             <span class="brand-mark"><i class="fa fa-handshake"></i><span>IDrive BMR MSP</span><small>Reseller Console</small></span>
           </div>
@@ -559,6 +697,7 @@
         <article class="work" data-cat="web" data-reveal>
           <div class="work__thumb"><img src="assets/images/shots/shot-ssmtheory.png" alt="SSM Theory site" loading="lazy"></div>
           <span class="work__cat">Web &amp; AI</span>
+          <span class="work__ai"><i class="fa fa-wand-magic-sparkles"></i> AI</span>
           <div class="work__body">
             <h4>SSM Theory</h4>
             <p>AI-integrated research site for the Selection-Stitch Model &amp; quantum computing.</p>
@@ -585,6 +724,7 @@
             <span class="brand-mark"><i class="fa fa-camera"></i><span>Face.idrive.com</span><small>AI Vision APIs</small></span>
           </div>
           <span class="work__cat">Web &amp; AI</span>
+          <span class="work__ai"><i class="fa fa-wand-magic-sparkles"></i> AI</span>
           <div class="work__body">
             <h4>Face.idrive.com</h4>
             <p>Facial-recognition APIs with unlimited metadata storage &amp; image analysis.</p>
@@ -601,9 +741,94 @@
             <p>Privately connects customers to businesses through real-time messaging.</p>
           </div>
         </article>
+
+        <!-- Desktop apps -->
+        <article class="work" data-cat="desktop" data-reveal>
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-desktop"></i><span>IDrive Desktop</span><small>Windows · macOS · Linux</small></span>
+          </div>
+          <span class="work__cat">Desktop App</span>
+          <div class="work__body">
+            <h4>IDrive Desktop</h4>
+            <p>Cross-platform Electron backup client for Windows, macOS &amp; Linux.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/0821f25b-2940-4e9f-8d31-97e23adb2587-5d72/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/0821f25b-2940-4e9f-8d31-97e23adb2587-5d72/grid" target="_blank" rel="noopener" aria-label="View IDrive Desktop design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="desktop" data-reveal data-reveal-delay="1">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-desktop"></i><span>IDrive Mirror</span><small>Desktop Client</small></span>
+          </div>
+          <span class="work__cat">Desktop App</span>
+          <div class="work__body">
+            <h4>IDrive Mirror (Desktop)</h4>
+            <p>Real-time disk-image backup desktop client with a local-backup module.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/e1f1db66-ed34-4ae5-a639-f58ae1d94cf4-b4a2/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/e1f1db66-ed34-4ae5-a639-f58ae1d94cf4-b4a2/grid" target="_blank" rel="noopener" aria-label="View IDrive Mirror desktop design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <!-- Mobile apps -->
+        <article class="work" data-cat="mobile" data-reveal data-reveal-delay="2">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-mobile-screen-button"></i><span>IDrive App</span><small>Android · iOS</small></span>
+          </div>
+          <span class="work__cat">Mobile App</span>
+          <div class="work__body">
+            <h4>IDrive for Mobile</h4>
+            <p>Offline-first mobile backup &amp; sharing — 4.2★ rating, 500K+ downloads.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/aa7fb1d6-eed9-4b8e-8f2d-db9e63c48693-ff2c/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/aa7fb1d6-eed9-4b8e-8f2d-db9e63c48693-ff2c/grid" target="_blank" rel="noopener" aria-label="View IDrive mobile design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="mobile" data-reveal>
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-mobile-screen-button"></i><span>ZipDrive</span><small>Mobile Edge Cloud</small></span>
+          </div>
+          <span class="work__cat">Mobile App</span>
+          <div class="work__body">
+            <h4>ZipDrive (Mobile)</h4>
+            <p>Mobile edge cloud with secure file streaming &amp; a sharing module.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/6f79d544-86d9-4116-8d5c-cfd3d7c6c0f1-3a2a/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/6f79d544-86d9-4116-8d5c-cfd3d7c6c0f1-3a2a/grid" target="_blank" rel="noopener" aria-label="View ZipDrive mobile design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="mobile" data-reveal data-reveal-delay="1">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-mobile-screen-button"></i><span>Remote Access</span><small>Mobile</small></span>
+          </div>
+          <span class="work__cat">Mobile App</span>
+          <div class="work__body">
+            <h4>Remote Access (Mobile)</h4>
+            <p>Mobile remote desktop, technician tools &amp; remote-PC performance views.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/5da7d5fe-e948-4179-84ab-1e7d5dbef43a-08f4/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/5da7d5fe-e948-4179-84ab-1e7d5dbef43a-08f4/grid" target="_blank" rel="noopener" aria-label="View Remote Access mobile design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="work" data-cat="mobile" data-reveal data-reveal-delay="2">
+          <div class="work__thumb brand">
+            <span class="brand-mark"><i class="fa fa-mobile-screen-button"></i><span>Meeting App</span><small>Mobile</small></span>
+          </div>
+          <span class="work__cat">Mobile App</span>
+          <div class="work__body">
+            <h4>Meeting App</h4>
+            <p>Mobile meeting &amp; collaboration experience for remote teams.</p>
+            <a class="work__more" href="https://xd.adobe.com/view/16d6dfb6-71ab-42be-a410-3573d4568b11-4385/grid" target="_blank" rel="noopener">Design walkthrough <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <a class="work__arrow" href="https://xd.adobe.com/view/16d6dfb6-71ab-42be-a410-3573d4568b11-4385/grid" target="_blank" rel="noopener" aria-label="View Meeting App design"><i class="fa fa-arrow-up-right-from-square"></i></a>
+        </article>
       </div>
 
-      <p class="work-note" data-reveal>Plus IDrive Compute, e2 object storage, IDrive 360, and native mobile apps — full Adobe XD walkthroughs available on request.</p>
+      <p class="work-note" data-reveal>Plus IDrive Compute, e2 object storage, IDrive 360, and native mobile apps — explore the full set of interactive Adobe XD prototypes below.</p>
+      <div class="work-cta" data-reveal>
+        <button type="button" class="btn btn-ghost" data-open-prototypes data-magnetic>
+          <i class="fa fa-shapes"></i> View Project Prototypes <span class="count-badge">29</span>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -669,6 +894,113 @@
       </div>
     </div>
   </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow" data-reveal>Resume</span>
+        <h2 data-reveal data-reveal-delay="1">My <span class="gradient-text">resume</span>, page by page</h2>
+        <p class="section-sub" data-reveal data-reveal-delay="2">Flip through it below, or download the PDF to keep.</p>
+      </div>
+
+      <div class="resume-viewer" data-reveal>
+        <div class="resume-stage">
+          <button class="resume-nav prev" aria-label="Previous page" disabled><i class="fa fa-chevron-left"></i></button>
+
+          <div class="resume-frame">
+            <div class="resume-canvas-wrap">
+              <canvas class="resume-canvas" aria-label="Resume page"></canvas>
+            </div>
+            <div class="resume-loading">Loading resume…</div>
+            <div class="resume-error" hidden>
+              Preview unavailable here. You can still
+              <a href="assets/files/Sakthivadivel-Ganesan-Resume.pdf" target="_blank" rel="noopener">open the PDF</a>.
+            </div>
+          </div>
+
+          <button class="resume-nav next" aria-label="Next page" disabled><i class="fa fa-chevron-right"></i></button>
+        </div>
+
+        <div class="resume-bar">
+          <div class="resume-dots" aria-hidden="true"></div>
+          <span class="resume-count" aria-live="polite">Page 1 of 1</span>
+          <a class="btn btn-primary resume-download" href="assets/files/Sakthivadivel-Ganesan-Resume.pdf" download data-magnetic>
+            <i class="fa fa-download"></i> Download PDF
+          </a>
+        </div>
+
+        <div class="resume-extra">
+          <button type="button" class="btn btn-ghost" data-open-prototypes data-magnetic>
+            <i class="fa fa-shapes"></i> View Project Prototypes (Adobe XD) <span class="count-badge">29</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adobe XD prototypes panel -->
+  <div class="proto-modal" id="proto-modal" hidden>
+    <div class="proto-backdrop" data-proto-close></div>
+    <div class="proto-dialog" role="dialog" aria-modal="true" aria-labelledby="proto-title">
+      <div class="proto-head">
+        <div>
+          <h3 id="proto-title">Project Prototypes — Adobe XD</h3>
+          <p class="proto-sub">Interactive wireframes &amp; flows I designed at IDrive. Click any project to open it in a new tab.</p>
+        </div>
+        <button type="button" class="proto-close" data-proto-close aria-label="Close"><i class="fa fa-xmark"></i></button>
+      </div>
+
+      <div class="proto-body">
+        <div class="proto-group">
+          <h4><i class="fa fa-globe"></i> Web Application Projects</h4>
+          <div class="proto-grid">
+            <a class="proto-link" href="https://xd.adobe.com/view/b7e47557-aec0-4f9e-b970-f4b91929a250-e2b7/grid" target="_blank" rel="noopener">IDrive Compute <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/00b1311f-4cab-4a4c-968e-dda57a88b56d-55e2/grid" target="_blank" rel="noopener">Load Balancer Module (Compute) <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/65a096c3-45d1-4d5e-9ca1-d6dbe8f3091d-30f3/grid" target="_blank" rel="noopener">IDrive® BMR <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/6f4fb099-75dd-40df-be48-77004e665547-3a1c/grid" target="_blank" rel="noopener">BMR — Partnership Program <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/96f1b727-6784-4888-9fd7-ada19f4eeb3d-c3a2/grid" target="_blank" rel="noopener">IDrive® ZipDrive (→ e2) <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/d7e9a0db-b27a-470b-9996-b9900c050dcb-82ba/grid" target="_blank" rel="noopener">ZipDrive — Sharing Flow <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/caa900fc-2709-40c3-9058-dc3b4746140b-9ffa/screen/68b5dc5d-75c8-4ff8-a3fc-c9e01489bf27" target="_blank" rel="noopener">BMR MSP — Enterprise Dashboard <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/c3700946-63ce-4e73-9938-3ac17d6b778a-9623/grid" target="_blank" rel="noopener">Remote PC <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/6c04bdeb-a736-4570-ad8c-fd9e2b2d8008-3957/grid" target="_blank" rel="noopener">Help Desk <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/b1eb2c49-7a94-466d-bae5-e5064327f696-e4b8/grid" target="_blank" rel="noopener">Remote Helpdesk <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/41ad2923-31d8-4b0e-b627-f810b1a0f5ee-14fe/grid" target="_blank" rel="noopener">Meeting <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/a57e816c-5a6f-42ac-9317-41b5f2835e20-f02d/grid" target="_blank" rel="noopener">IDrive Mirror Desktop <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/33e7573d-73b7-45cf-bfb0-2f8038750f1b-66b4/grid" target="_blank" rel="noopener">IDrive e2 Express <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/a718267d-19a8-4102-8277-81bd65740906-f24b/grid" target="_blank" rel="noopener">IDrive e2 User Management <i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="proto-group">
+          <h4><i class="fa fa-desktop"></i> Desktop Application Projects</h4>
+          <div class="proto-grid">
+            <a class="proto-link" href="https://xd.adobe.com/view/0821f25b-2940-4e9f-8d31-97e23adb2587-5d72/grid" target="_blank" rel="noopener">IDrive Desktop <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/a57e816c-5a6f-42ac-9317-41b5f2835e20-f02d/grid" target="_blank" rel="noopener">IDrive Mirror <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/e1f1db66-ed34-4ae5-a639-f58ae1d94cf4-b4a2/grid" target="_blank" rel="noopener">Local Backup Module (Mirror) <i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="proto-group">
+          <h4><i class="fa fa-mobile-screen-button"></i> Android Application</h4>
+          <div class="proto-grid">
+            <a class="proto-link" href="https://xd.adobe.com/view/aa7fb1d6-eed9-4b8e-8f2d-db9e63c48693-ff2c/grid" target="_blank" rel="noopener">IDrive <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/6f79d544-86d9-4116-8d5c-cfd3d7c6c0f1-3a2a/grid" target="_blank" rel="noopener">ZipDrive — View 1 <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/e9c91607-b67a-4ed6-8318-3ebb1a21cd2b-bc9a/grid" target="_blank" rel="noopener">ZipDrive — View 2 <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/6f79d544-86d9-4116-8d5c-cfd3d7c6c0f1-3a2a/grid" target="_blank" rel="noopener">Sharing Module — View 1 <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/5a869cef-7e36-4409-8e19-e1eb2b8ec3a9-0fd5/grid" target="_blank" rel="noopener">Sharing Module — View 2 <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/5da7d5fe-e948-4179-84ab-1e7d5dbef43a-08f4/grid" target="_blank" rel="noopener">Remote Access <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/16d6dfb6-71ab-42be-a410-3573d4568b11-4385/grid" target="_blank" rel="noopener">Meeting App <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/96de206b-8bbd-446b-8f51-dad66067537a-c38d/grid" target="_blank" rel="noopener">Remote Technician Module <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/40891017-da45-4af4-bad7-b01331d36468-15da/grid" target="_blank" rel="noopener">Remote Desktop <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/3554bb6e-26a4-45f1-aa41-3d48252723d8-6007/grid" target="_blank" rel="noopener">Remote PC Performance <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/96f1b727-6784-4888-9fd7-ada19f4eeb3d-c3a2/grid" target="_blank" rel="noopener">EdgeDrive — View 1 <i class="fa fa-arrow-up-right-from-square"></i></a>
+            <a class="proto-link" href="https://xd.adobe.com/view/d7e9a0db-b27a-470b-9996-b9900c050dcb-82ba/grid" target="_blank" rel="noopener">EdgeDrive — View 2 <i class="fa fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Contact -->
   <section class="section" id="contact">
@@ -759,11 +1091,25 @@
           <a href="tel:+919945553867" aria-label="Phone"><i class="fa fa-phone"></i></a>
         </div>
       </div>
+      <div class="footer-theme">
+        <div class="theme-switch" role="group" aria-label="Color theme">
+          <button type="button" class="theme-switch__btn" data-theme-choice="system" aria-pressed="true">
+            <i class="fa fa-desktop" aria-hidden="true"></i><span class="theme-switch__label">System</span>
+          </button>
+          <button type="button" class="theme-switch__btn" data-theme-choice="light" aria-pressed="false">
+            <i class="fa fa-sun" aria-hidden="true"></i><span class="theme-switch__label">Light</span>
+          </button>
+          <button type="button" class="theme-switch__btn" data-theme-choice="dark" aria-pressed="false">
+            <i class="fa fa-moon" aria-hidden="true"></i><span class="theme-switch__label">Dark</span>
+          </button>
+        </div>
+      </div>
     </div>
   </footer>
 
   <button class="to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

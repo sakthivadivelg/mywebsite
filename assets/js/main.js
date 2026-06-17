@@ -363,6 +363,183 @@
     });
   }
 
+  /* ---------- Resume PDF slider (PDF.js) ---------- */
+  (function resume() {
+    const viewer = $(".resume-viewer");
+    if (!viewer) return;
+    const canvas = $(".resume-canvas", viewer);
+    const wrap = $(".resume-canvas-wrap", viewer);
+    const loading = $(".resume-loading", viewer);
+    const errorBox = $(".resume-error", viewer);
+    const prevBtn = $(".resume-nav.prev", viewer);
+    const nextBtn = $(".resume-nav.next", viewer);
+    const dotsWrap = $(".resume-dots", viewer);
+    const count = $(".resume-count", viewer);
+    const url = "assets/files/Sakthivadivel-Ganesan-Resume.pdf";
+
+    function fail() {
+      if (loading) loading.hidden = true;
+      if (errorBox) errorBox.hidden = false;
+      if (wrap) wrap.style.display = "none";
+      [prevBtn, nextBtn].forEach((b) => b && (b.style.display = "none"));
+      if (dotsWrap) dotsWrap.style.display = "none";
+      if (count) count.style.display = "none";
+    }
+
+    if (!window.pdfjsLib) { fail(); return; }
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    let pdf = null, page = 1, total = 1, rendering = false, pendingResize = false;
+
+    function updateChrome() {
+      if (count) count.textContent = "Page " + page + " of " + total;
+      if (prevBtn) prevBtn.disabled = page <= 1;
+      if (nextBtn) nextBtn.disabled = page >= total;
+      $$(".resume-dot", dotsWrap).forEach((d, i) =>
+        d.setAttribute("aria-current", String(i + 1 === page))
+      );
+    }
+
+    function buildDots() {
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = "";
+      for (let i = 1; i <= total; i++) {
+        const dot = document.createElement("button");
+        dot.className = "resume-dot";
+        dot.type = "button";
+        dot.setAttribute("aria-label", "Go to page " + i);
+        dot.addEventListener("click", () => go(i));
+        dotsWrap.appendChild(dot);
+      }
+    }
+
+    async function render() {
+      if (!pdf || rendering) return;
+      rendering = true;
+      try {
+        const pg = await pdf.getPage(page);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const avail = (wrap ? wrap.clientWidth : canvas.clientWidth) || 720;
+        const base = pg.getViewport({ scale: 1 });
+        const scale = Math.min(avail / base.width, 1.6); // cap so it stays crisp, not huge
+        const vp = pg.getViewport({ scale: scale * dpr });
+        const ctx = canvas.getContext("2d");
+        canvas.width = vp.width;
+        canvas.height = vp.height;
+        canvas.style.width = vp.width / dpr + "px";
+        canvas.style.height = vp.height / dpr + "px";
+        await pg.render({ canvasContext: ctx, viewport: vp }).promise;
+        if (loading) loading.hidden = true;
+      } catch (e) {
+        fail();
+      } finally {
+        rendering = false;
+        if (pendingResize) { pendingResize = false; render(); }
+      }
+    }
+
+    function go(n) {
+      const next = Math.max(1, Math.min(total, n));
+      if (next === page) return;
+      page = next;
+      updateChrome();
+      render();
+    }
+
+    if (prevBtn) prevBtn.addEventListener("click", () => go(page - 1));
+    if (nextBtn) nextBtn.addEventListener("click", () => go(page + 1));
+
+    let rt;
+    window.addEventListener("resize", () => {
+      clearTimeout(rt);
+      rt = setTimeout(() => { if (rendering) pendingResize = true; else render(); }, 200);
+    }, { passive: true });
+
+    pdfjsLib.getDocument(url).promise.then((doc) => {
+      pdf = doc;
+      total = doc.numPages;
+      page = 1;
+      buildDots();
+      updateChrome();
+      render();
+    }).catch(fail);
+  })();
+
+  /* ---------- Adobe XD prototypes modal ---------- */
+  (function prototypes() {
+    const modal = $("#proto-modal");
+    const openBtns = $$("[data-open-prototypes]");
+    if (!modal || !openBtns.length) return;
+    const dialog = $(".proto-dialog", modal);
+    let lastFocus = null;
+
+    function open() {
+      lastFocus = document.activeElement;
+      modal.hidden = false;
+      void modal.offsetWidth; // reflow so the open transition runs
+      modal.classList.add("open");
+      document.body.style.overflow = "hidden";
+      const closeBtn = $(".proto-close", modal);
+      if (closeBtn) closeBtn.focus();
+    }
+    function close() {
+      if (modal.hidden) return;
+      modal.classList.remove("open");
+      document.body.style.overflow = "";
+      const done = () => { modal.hidden = true; dialog.removeEventListener("transitionend", done); };
+      dialog.addEventListener("transitionend", done);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    openBtns.forEach((b) => b.addEventListener("click", open));
+    $$("[data-proto-close]", modal).forEach((el) => el.addEventListener("click", close));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  })();
+
+  /* ---------- Theme switcher (System / Light / Dark) ---------- */
+  (function theme() {
+    const btns = $$(".theme-switch__btn");
+    if (!btns.length) return;
+    const root = document.documentElement;
+    const meta = $('meta[name="theme-color"]');
+    const darkMq = window.matchMedia("(prefers-color-scheme: dark)");
+    const STORE = "theme";
+    const themeColors = { dark: "#07070c", light: "#f5f6fb" };
+
+    const stored = () => {
+      try { return localStorage.getItem(STORE) || "system"; } catch (e) { return "system"; }
+    };
+    const effective = (pref) =>
+      pref === "system" ? (darkMq.matches ? "dark" : "light") : pref;
+
+    function apply(pref) {
+      const eff = effective(pref);
+      root.setAttribute("data-theme", eff);
+      if (meta) meta.setAttribute("content", themeColors[eff] || themeColors.dark);
+      btns.forEach((b) =>
+        b.setAttribute("aria-pressed", String(b.dataset.themeChoice === pref))
+      );
+    }
+
+    btns.forEach((b) => {
+      b.addEventListener("click", () => {
+        const pref = b.dataset.themeChoice;
+        try { localStorage.setItem(STORE, pref); } catch (e) {}
+        apply(pref);
+      });
+    });
+
+    // Live-update while on "System" if the OS theme changes.
+    const onSystemChange = () => { if (stored() === "system") apply("system"); };
+    if (darkMq.addEventListener) darkMq.addEventListener("change", onSystemChange);
+    else if (darkMq.addListener) darkMq.addListener(onSystemChange);
+
+    apply(stored());
+  })();
+
   /* ---------- Footer year ---------- */
   const yr = $("#year");
   if (yr) yr.textContent = new Date().getFullYear();
