@@ -510,7 +510,7 @@
     const themeColors = { dark: "#07070c", light: "#f5f6fb" };
 
     const stored = () => {
-      try { return localStorage.getItem(STORE) || "system"; } catch (e) { return "system"; }
+      try { return localStorage.getItem(STORE) || "dark"; } catch (e) { return "dark"; }
     };
     const effective = (pref) =>
       pref === "system" ? (darkMq.matches ? "dark" : "light") : pref;
@@ -537,7 +537,8 @@
     if (darkMq.addEventListener) darkMq.addEventListener("change", onSystemChange);
     else if (darkMq.addListener) darkMq.addListener(onSystemChange);
 
-    apply(stored());
+    const q = new URLSearchParams(location.search).get("theme");
+    apply((q === "light" || q === "dark" || q === "system") ? q : stored());
   })();
 
   /* ---------- Footer year ---------- */

@@ -11,7 +11,9 @@
   <script>
     (function () {
       try {
-        var stored = localStorage.getItem("theme") || "system";
+        var q = new URLSearchParams(location.search).get("theme");
+        var stored = (q === "light" || q === "dark" || q === "system")
+          ? q : (localStorage.getItem("theme") || "dark");
         var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         var effective = stored === "system" ? (dark ? "dark" : "light") : stored;
         document.documentElement.setAttribute("data-theme", effective);

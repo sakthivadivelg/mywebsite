@@ -58,6 +58,12 @@ html[data-theme="light"] {
   --text-soft: #44475a;
   --text-dim: #6c6f82;
 
+  /* Accents retuned for contrast on light backgrounds (WCAG AA as foreground) */
+  --violet: #5b3fd6;
+  --cyan: #0a7d70;
+  --amber: #9a6a00;
+  --pink: #d4357f;
+
   --grad-text: linear-gradient(100deg, #6d4bff 0%, #2f6dff 45%, #00a394 100%);
 
   --shadow-soft: 0 18px 50px -24px rgba(30, 34, 70, 0.28);
@@ -76,6 +82,19 @@ html[data-theme="light"] .edu .ic,
 html[data-theme="light"] .contact-list .ic {
   background: var(--grad-main);
 }
+/* Elevated cards used white tints (invisible on light) — give them solid surfaces */
+html[data-theme="light"] .hero-card,
+html[data-theme="light"] .case,
+html[data-theme="light"] .cert,
+html[data-theme="light"] .testi__card,
+html[data-theme="light"] .field input,
+html[data-theme="light"] .field textarea {
+  background: #ffffff;
+}
+/* Tracks / dots / bars that used faint white — make them visible on light */
+html[data-theme="light"] .skill__bar,
+html[data-theme="light"] .preloader__bar { background: rgba(18, 18, 40, 0.10); }
+html[data-theme="light"] .testi-dot { background: rgba(18, 18, 40, 0.22); }
 
 /* ---------- Reset ---------- */
 *,
